@@ -73,6 +73,9 @@ h3{font-size:1.6rem}
 }
 
 
+.d-grid{
+	display: grid;
+}
 
 strong,
 .bold{
@@ -258,11 +261,8 @@ em strong
 	p{
 		margin: .5rem 0;
 	}
-
 	.title{
 		font-family: "SegoeUIBold";
-	}
-	aside{
 	}
 }
 
@@ -275,6 +275,10 @@ em strong
 	font-size: 30px;
 	text-transform: uppercase;
 }
+
+/* =main
+---------------------------*/
+
 
 
 /* =footer
