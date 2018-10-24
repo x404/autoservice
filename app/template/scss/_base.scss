@@ -33,6 +33,7 @@ html {
 body{
 	@include font-size(1.4);
 	font-display: swap;
+	font-family: "SegoeUIItalic", Arial;
 }
 
 html, body{
@@ -71,46 +72,7 @@ h3{font-size:1.6rem}
 	font-family: "SegoeUIRegular";	
 }
 
-/* font-family: "SegoeUIRegular"; */
-@font-face {
-	font-family: "SegoeUIRegular";
-	src: url("../fonts/SegoeUIRegular/SegoeUIRegular.eot");
-	src: url("../fonts/SegoeUIRegular/SegoeUIRegular.eot?#iefix")format("embedded-opentype"),
-	url("../fonts/SegoeUIRegular/SegoeUIRegular.woff") format("woff"),
-	url("../fonts/SegoeUIRegular/SegoeUIRegular.ttf") format("truetype");
-	font-style: normal;
-	font-weight: normal;
-}
-/* font-family: "SegoeUIBold"; */
-@font-face {
-	font-family: "SegoeUIBold";
-	src: url("../fonts/SegoeUIBold/SegoeUIBold.eot");
-	src: url("../fonts/SegoeUIBold/SegoeUIBold.eot?#iefix")format("embedded-opentype"),
-	url("../fonts/SegoeUIBold/SegoeUIBold.woff") format("woff"),
-	url("../fonts/SegoeUIBold/SegoeUIBold.ttf") format("truetype");
-	font-style: normal;
-	font-weight: normal;
-}
 
-@font-face {
-	font-family: "SegoeUIItalic";
-	src: url("../fonts/SegoeUIItalic/SegoeUIItalic.eot");
-	src: url("../fonts/SegoeUIItalic/SegoeUIItalic.eot?#iefix")format("embedded-opentype"),
-	url("../fonts/SegoeUIItalic/SegoeUIItalic.woff") format("woff"),
-	url("../fonts/SegoeUIItalic/SegoeUIItalic.ttf") format("truetype");
-	font-style: normal;
-	font-weight: normal;
-}
-
-@font-face {
-	font-family: "SegoeUIBoldItalic";
-	src: url("../fonts/SegoeUIBoldItalic/SegoeUIBoldItalic.eot");
-	src: url("../fonts/SegoeUIBoldItalic/SegoeUIBoldItalic.eot?#iefix")format("embedded-opentype"),
-	url("../fonts/SegoeUIBoldItalic/SegoeUIBoldItalic.woff") format("woff"),
-	url("../fonts/SegoeUIBoldItalic/SegoeUIBoldItalic.ttf") format("truetype");
-	font-style: normal;
-	font-weight: normal;
-}
 
 strong,
 .bold{
@@ -270,13 +232,6 @@ em strong
 /* =/navigation
 ---------------------------*/
 
-/* =main
----------------------------*/
-
-.main{
-	aside{
-	}
-}
 
 
 
@@ -292,6 +247,33 @@ em strong
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+
+
+/* =main
+---------------------------*/
+
+.main{
+	p{
+		margin: .5rem 0;
+	}
+
+	.title{
+		font-family: "SegoeUIBold";
+	}
+	aside{
+	}
+}
+
+.text{
+	margin: 3rem 0;
+}
+
+.title{
+	color: $color3;
+	font-size: 30px;
+	text-transform: uppercase;
 }
 
 
