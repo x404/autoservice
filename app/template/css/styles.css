@@ -3464,7 +3464,7 @@ em strong {
   .tdu:hover {
     text-decoration: none; }
 
-.before {
+.before, .share .container:before {
   content: "";
   display: block;
   position: absolute; }
@@ -3539,6 +3539,80 @@ em strong {
   height: 1px;
   overflow: hidden;
   clip: rect(0 0 0 0); }
+
+.flex-center, .footer .social a {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+/* =footer
+---------------------------*/
+.footer .logo {
+  text-align: center;
+  width: 140px; }
+
+.footer__top {
+  background-color: #e6e6e6;
+  padding: 3rem 0 1rem; }
+  .footer__top .container {
+    position: relative; }
+
+.footer__meta {
+  padding: .5rem 0; }
+
+.footer .social {
+  margin-top: 3.2rem; }
+  .footer .social a {
+    background-color: #e6e6e6;
+    border-radius: 50%;
+    height: 30px;
+    margin: 0 .2rem;
+    width: 30px; }
+    .footer .social a:hover {
+      background-color: #006192; }
+
+.footer__menu {
+  margin-left: 2.5rem;
+  flex-grow: 1; }
+
+/* =/footer
+---------------------------*/
+/* =share
+---------------------------*/
+.share {
+  font-size: 18px;
+  margin-top: 35px; }
+  .share .container {
+    padding-top: .2rem;
+    padding-bottom: 40px;
+    position: relative; }
+    .share .container p {
+      margin: 2rem 0; }
+    .share .container:before {
+      width: 100%;
+      height: 1px;
+      left: 0;
+      top: 0;
+      background-image: linear-gradient(to right, #fff 0%, #97a7c6 50%, #97a7c6 51%, #fff 100%); }
+
+/* =/share
+---------------------------*/
+#totop {
+  background: none;
+  border: none;
+  top: -78px;
+  cursor: pointer;
+  height: 48px;
+  position: absolute;
+  right: 0;
+  width: 70px;
+  z-index: 2;
+  transition: .2s; }
+  #totop line {
+    stroke: #006192;
+    stroke-width: 3; }
+  #totop:hover {
+    top: -81px; }
 
 /* =mobile-menu
 ---------------------------*/
