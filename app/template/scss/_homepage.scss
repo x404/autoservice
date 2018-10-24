@@ -106,8 +106,101 @@
 }
 
 .services-grid{
-	grid-template-columns: repeat(auto-fit, 270px);
-	grid-column-gap: 30px;
+	// grid-template-columns: repeat(auto-fit, 270px);
+	// grid-column-gap: 30px;
 	flex-wrap: wrap;
-	margin-top: 35px;
+	margin: 35px 0 55px;
+}
+
+
+/* =articles
+---------------------------*/
+.articles{
+	margin-bottom: 5rem;
+	.title{
+		margin-bottom: 3rem;
+	}
+}
+
+.article{
+	&__item{
+		width: 270px;
+	}
+	&__link{
+		color: $color2;
+		display: block;
+		position: relative;
+		overflow: hidden;
+		&:before{
+			@extend .before;
+			width: 0;
+			height: 0;
+			border-top: 310px solid rgba(0,0,0,.3); 
+			border-right: 230px solid transparent;
+    		z-index: 2;
+    		transition: border-color .3s;
+		}
+		img{
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+		&:hover{
+			color: $color2;
+			text-decoration: none;
+			.btn{
+				background-color: #000
+			}
+			&:before{
+				border-top-color: rgba(0,0,0,.8)
+			}
+		}
+	}
+	&__body{
+		min-height: 270px;
+		position: relative;
+		z-index: 2;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		padding: 2.8rem 1.2rem 2.5rem; 
+		.btn{
+			background-color: $color3;
+			border: none;
+			bottom: 2.8rem;
+			color: $color2;
+			height: 35px;
+			left: 3rem;
+			position: absolute;
+			transition: .3s;
+			width: 115px;
+		}
+	}
+	&__title{
+		font-family: "SegoeUIBold";
+		color: $color2;
+		text-transform: uppercase;
+		font-size: 1.8rem;
+		margin-bottom: 1rem;
+	}
+}
+
+/* =/articles
+---------------------------*/
+
+
+
+#articles-carousel{
+	line{
+		stroke: #7f7f7f;
+		stroke-width:3;
+		transition: .3s;
+	}
+
+	.article{
+		&__item{
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
 }
