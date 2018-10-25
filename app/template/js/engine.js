@@ -85,3 +85,15 @@ $(document).ready(function(){
 		return false;
 	});
 });
+
+
+
+$('body').on('click','[data-coord]', function(e) {
+	e.preventDefault();
+	var $this = $(this).data('coord').split(','),
+		lat = $this[0],
+		lon = $this[1];
+	map.setCenter([lat, lon], 16);
+	// $('.btn-active').removeClass('btn-active');
+	// $(this).addClass('btn-active');
+});

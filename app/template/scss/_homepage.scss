@@ -206,6 +206,20 @@
 }
 
 
+.tab-content {
+  > .tab-pane {
+    display: none;
+  }
+  > .active {
+    display: block;
+  }
+}
+
+.fade.show {
+    opacity: 1;
+}
+
+
 .map__container{
 	position: relative;
 	.vcard{
@@ -224,22 +238,41 @@
 		top: 50%;
 		margin-top: -132px;
 		margin-left: 160px;
+
+		.btn{
+			background: none;
+			border-radius: 4rem;
+			border: 2px solid #ffffff;
+			color: $color2;
+			font-family: "SegoeUIBoldItalic";
+			font-weight: 1.5rem;
+			height: 4rem;
+			line-height: normal;
+			margin-top: 4rem;
+			transition: .3s;
+			width: 21.4rem;
+			&:hover{
+				background: $color2;
+				color: $color3;
+			}
+		}
 	}
-	.btn{
-		background: none;
-		border-radius: 4rem;
-		border: 2px solid #ffffff;
-		color: $color2;
+
+	.btn-groups{
 		font-family: "SegoeUIBoldItalic";
-		font-weight: 1.5rem;
-		height: 4rem;
-		line-height: normal;
-		margin-top: 4rem;
-		transition: .3s;
-		width: 21.4rem;
-		&:hover{
-			background: $color2;
-			color: $color3;
+		text-align: center;
+		font-size: 1.5rem;
+		margin: 1rem 0 2.5rem;
+		a{
+			border-bottom: 2px dashed rgba(0,0,0,0);
+			color: $color8;	
+			margin: 0 1rem;
+			padding-bottom: .5rem;
+			&.active,
+			&:hover{
+				text-decoration: none;
+				border-bottom-color: $color3;
+			}
 		}
 	}
 }

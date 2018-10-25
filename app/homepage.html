@@ -260,14 +260,34 @@
 			<p class="title text-center">Как нас найти</p>
 			<div class="map__container">
 				<div class="container">
-					<div class="vcard">
-						141014, Московская область, г. Мытищи, ул. Трудовая, 37А <br>
-						+7 (499) 641-33-00 (многоканальный) <br>
-						с 9:00 до 21:00 ежедневно <br>
-						info@8shin.ru
+					<div class="flexbox btn-groups nav">
+						<a href="#panel1" role="button" class="btn active" data-coord="55.891542, 37.711087" data-toggle="tab" aria-controls="panel1">Трудовая 37А</a>
+						<a href="#panel2" role="button" class="btn" data-coord="55.854522, 37.564876" data-toggle="tab" aria-controls="panel2">ТСЦ Дмитровка</a>
+					</div>
 
-						<button type="button" class="btn">написать нам</button>
-					</div>					
+					<div class="tab-content address__info container">
+						<div role="tabpanel" class="tab-pane fade show active" id="panel1">
+
+							<div class="vcard">
+								141014, Московская область, г. Мытищи, ул. Трудовая, 37А <br>
+								+7 (499) 641-33-00 (многоканальный) <br>
+								с 9:00 до 21:00 ежедневно <br>
+								info@8shin.ru
+								<button type="button" class="btn">написать нам</button>
+							</div>	
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="panel2">
+							<div class="flexbox">
+								<div class="vcard">
+									141014, Московская область, г. Мытищи, ТСЦ Дмитровка <br>
+									+7 (499) 641-33-00 (многоканальный) <br>
+									с 9:00 до 21:00 ежедневно <br>
+									info@8shin.ru
+									<button type="button" class="btn">написать нам</button>
+								</div>	
+							</div>
+						</div>
+					</div>				
 				</div>
 				<div id="ymap"></div>
 			</div>
@@ -465,18 +485,16 @@
 
 
 <script src="http://api-maps.yandex.ru/2.1.26/?lang=ru_RU"></script>
+
 <script>
 var map;
-var myCollection;	
+var myCollection;
 ymaps.ready(function () {
 	map = new ymaps.Map('ymap', {
 		center: [55.891542, 37.711087],
-		zoom: 16
+		zoom: 17
 	});
-    myPlacemark = new ymaps.Placemark(map.getCenter(), {
-        hintContent: 'Собственный значок метки',
-        balloonContent: 'Это красивая метка'
-    }, {
+	myCollection = new ymaps.GeoObjectCollection(null, {
         // Опции.
         // Необходимо указать данный тип макета.
         iconLayout: 'default#image',
@@ -487,9 +505,27 @@ ymaps.ready(function () {
         // Смещение левого верхнего угла иконки относительно
         // её "ножки" (точки привязки).
         iconImageOffset: [-30, -86]
-    }),
+	});
+	myCollection.add(new ymaps.Placemark(
+		[55.891542, 37.711087],
+		{
+			hintContent: 'Трудовая 37А',
+			balloonContent: ''
+		}
+	));
+	myCollection.add(new ymaps.Placemark(
+		[55.854522, 37.564876],
+		{
+			hintContent: 'ТСЦ Дмитровка',
+			balloonContent: ''
+		}
+	));
+
 	map.behaviors.disable('scrollZoom'); 
-	map.geoObjects.add(myPlacemark);
+
+	map.geoObjects.add(myCollection);
+
+
 	map.events.add('click', function onMapClick(e) {
 		if(map.behaviors.isEnabled('scrollZoom')) {
 			map.events.remove('click', onMapClick);
@@ -497,9 +533,11 @@ ymaps.ready(function () {
 			map.behaviors.enable(['scrollZoom']);
 		}
 	});
-})
+});
+function go_to(lat,lon){
+	map.setCenter([lat, lon], 16);
+}
 </script>
-
 
 </body>
 </html>

@@ -3373,6 +3373,29 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 */
+.fade {
+  opacity: 0;
+  transition: opacity .15s linear; }
+  .fade.show {
+    opacity: 1; }
+
+.collapse {
+  display: none; }
+  .collapse.show {
+    display: block; }
+
+tr.collapse.show {
+  display: table-row; }
+
+tbody.collapse.show {
+  display: table-row-group; }
+
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: height .35s ease; }
+
 /*** reset ***********/
 html, body, ul, ol, li, dl, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, a, img, label {
   margin: 0;
@@ -3818,6 +3841,15 @@ button {
   margin-left: auto;
   margin-right: auto; }
 
+.tab-content > .tab-pane {
+  display: none; }
+
+.tab-content > .active {
+  display: block; }
+
+.fade.show {
+  opacity: 1; }
+
 .map__container {
   position: relative; }
   .map__container .vcard {
@@ -3835,21 +3867,34 @@ button {
     top: 50%;
     margin-top: -132px;
     margin-left: 160px; }
-  .map__container .btn {
-    background: none;
-    border-radius: 4rem;
-    border: 2px solid #ffffff;
-    color: #fff;
+    .map__container .vcard .btn {
+      background: none;
+      border-radius: 4rem;
+      border: 2px solid #ffffff;
+      color: #fff;
+      font-family: "SegoeUIBoldItalic";
+      font-weight: 1.5rem;
+      height: 4rem;
+      line-height: normal;
+      margin-top: 4rem;
+      transition: .3s;
+      width: 21.4rem; }
+      .map__container .vcard .btn:hover {
+        background: #fff;
+        color: #006192; }
+  .map__container .btn-groups {
     font-family: "SegoeUIBoldItalic";
-    font-weight: 1.5rem;
-    height: 4rem;
-    line-height: normal;
-    margin-top: 4rem;
-    transition: .3s;
-    width: 21.4rem; }
-    .map__container .btn:hover {
-      background: #fff;
-      color: #006192; }
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 1rem 0 2.5rem; }
+    .map__container .btn-groups a {
+      border-bottom: 2px dashed rgba(0, 0, 0, 0);
+      color: #0073a4;
+      margin: 0 1rem;
+      padding-bottom: .5rem; }
+      .map__container .btn-groups a.active, .map__container .btn-groups a:hover {
+        text-decoration: none;
+        border-bottom-color: #006192; }
 
 #ymap {
   height: 450px; }
