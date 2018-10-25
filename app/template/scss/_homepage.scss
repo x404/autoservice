@@ -113,6 +113,71 @@
 }
 
 
+
+/* =visual
+---------------------------*/
+.visual{
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 7rem 0;
+	&__box{
+		background-color: rgba(0, 97, 146, .55);
+		border-radius: 15px;
+		color: $color2;
+		font-family: "SegoeUIRegular";
+		height: 264px;
+		padding: 3.4rem 3.5rem;
+		text-align: center;
+		width: 55rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	&__title{
+		padding: 1rem 0;
+		font-size: 2.2rem;
+		text-transform: uppercase;
+		position: relative;
+		&:before,
+		&:after{
+			@extend .before;
+			width: 230px;
+			height: 1px;
+			left: 50%;
+			margin-left: -115px;
+			background-image: linear-gradient(to right, transparent 0%, #fff 50%, #fff 51%, transparent 100%);
+		}
+		&:before{
+			top: 0;			
+		}
+		&:after{
+			bottom: 0;
+		}
+	}
+
+	.btn{
+		@extend .flex-center;
+		border-radius: 4rem;
+		border: 2px solid #ffffff;
+		color: $color2;
+		font-family: "SegoeUIBoldItalic";
+		font-size: 1.5rem;
+		height: 4rem;
+		margin: 0 auto;
+		text-align: center;
+		width: 214px;
+		&:hover{
+			background-color: $color2;
+			color: $color3;
+			text-decoration: none;
+		}
+	}
+
+}
+/* =/visual
+---------------------------*/
+
 /* =articles
 ---------------------------*/
 .articles{

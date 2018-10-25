@@ -3496,7 +3496,7 @@ button {
   .tdu:hover {
     text-decoration: none; }
 
-.before, .share .container:before, .article__link:before {
+.before, .share .container:before, .visual__title:before, .visual__title:after, .article__link:before {
   content: "";
   display: block;
   position: absolute; }
@@ -3577,7 +3577,7 @@ button {
   overflow: hidden;
   clip: rect(0 0 0 0); }
 
-.flex-center, .footer .social a, .service__link, .map__container .vcard {
+.flex-center, .footer .social a, .service__link, .visual .btn, .map__container .vcard {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -3770,6 +3770,57 @@ button {
   flex-wrap: wrap;
   margin: 35px 0 55px; }
 
+/* =visual
+---------------------------*/
+.visual {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 7rem 0; }
+  .visual__box {
+    background-color: rgba(0, 97, 146, 0.55);
+    border-radius: 15px;
+    color: #fff;
+    font-family: "SegoeUIRegular";
+    height: 264px;
+    padding: 3.4rem 3.5rem;
+    text-align: center;
+    width: 55rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  .visual__title {
+    padding: 1rem 0;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    position: relative; }
+    .visual__title:before, .visual__title:after {
+      width: 230px;
+      height: 1px;
+      left: 50%;
+      margin-left: -115px;
+      background-image: linear-gradient(to right, transparent 0%, #fff 50%, #fff 51%, transparent 100%); }
+    .visual__title:before {
+      top: 0; }
+    .visual__title:after {
+      bottom: 0; }
+  .visual .btn {
+    border-radius: 4rem;
+    border: 2px solid #ffffff;
+    color: #fff;
+    font-family: "SegoeUIBoldItalic";
+    font-size: 1.5rem;
+    height: 4rem;
+    margin: 0 auto;
+    text-align: center;
+    width: 214px; }
+    .visual .btn:hover {
+      background-color: #fff;
+      color: #006192;
+      text-decoration: none; }
+
+/* =/visual
+---------------------------*/
 /* =articles
 ---------------------------*/
 .articles {
