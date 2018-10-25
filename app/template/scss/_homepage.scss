@@ -1,13 +1,40 @@
 .carousel{
+	overflow: hidden;
 	position: relative;
 	img{
 		height: auto;
 		vertical-align: top;
 		width: 100%;
 	}
+
+
+	position: relative;
+	&:after,
+	&:before{
+		@extend .before;
+		height: 100%;
+		z-index: 2;
+	}
+	&:before{
+		width: 300px;
+		right: 32%;
+		width: 0;
+		height: 0;
+		border-bottom: 100vh solid rgba(0,115,164,.7); 
+		border-left: 230px solid transparent;
+	}
+	&:after{
+		width: 32%;
+		right: 0;
+		top: 0;
+		background: rgba(0,115,164,.7);
+	}
 }
+
+
 #home-carousel{
-	// overflow: hidden;
+	.slide{
+	}
 }
 
 .main{
