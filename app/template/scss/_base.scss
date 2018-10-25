@@ -4,9 +4,6 @@ header, section, footer, aside, nav, article {display:block}
 ul{list-style:none}
 
 
-$color5:#666;
-$color6:#ff5722;
-$color7:#80bbde;
 $color8:#292929;
 
 
@@ -161,16 +158,19 @@ button{
 .top{
 	background-color: $color4;
 	color: $color3;
-	padding: 1rem 0;
-	font-size: 1.6rem;
+	font-size: 1.8rem;
+	padding: .5rem 0;
+	text-transform: uppercase;
 }
 
 /* =header
 ---------------------------*/
 .header{
+	font-family: "SegoeUIRegular";
 	padding: 1.6rem 0;
+	font-size: 1.5rem;
 	.logo{
-
+		margin: 0 2.5rem 0 1rem;
 	}
 	&__contacts{
 		color: $color3;
@@ -181,8 +181,9 @@ button{
 			}			
 		}
 		.tel{
+			font-family: "SegoeUIBold";
 			color: $color3;
-			font-size: 2.2rem;
+			font-size: 2.3rem;
 			line-height: 1;
 			span{
 				color: $color1;	
@@ -197,8 +198,6 @@ button{
 			text-decoration: none;
 		}
 	}
-
-
 }
 
 /* =/header
@@ -228,6 +227,7 @@ button{
 		}
 		a{
 			border-bottom: 1px dashed rgba(0,0,0,0);
+			color: $color5;
 			display: block;
 			&:hover{
 				border-bottom-color: $color;
@@ -264,6 +264,7 @@ button{
 
 .main{
 	p{
+		line-height: 1.8;
 		margin: .5rem 0;
 	}
 	.title{
@@ -277,7 +278,7 @@ button{
 
 .title{
 	color: $color3;
-	font-size: 30px;
+	font-size: 3rem;
 	text-transform: uppercase;
 }
 
@@ -289,34 +290,54 @@ button{
 /* =footer
 ---------------------------*/
 .footer{
+	color: $color1;
 	.logo{
 		text-align: center;
 		width: 140px;
 	}
 	&__top{
-		background-color: $color4;
+		background-color: $color6;
 		padding: 3rem 0 1rem;
 		.container{
 			position: relative;
 		}
 	}
 	&__meta{
+		background: $color7;
 		padding: .5rem 0;
 		a{
-			// color: $color3;
+			color: $color3;
+			border-bottom: 1px dashed;
+			&:hover{
+				text-decoration: none;
+				border-bottom: none;
+			}
 		}
 	}
 	.social{
 		margin-top: 3.2rem;
 		a{
-			background-color: $color4;
+			// background-color: $color4;
 			@extend .flex-center;
 			border-radius: 50%;
-			height: 30px;
+			height: 31px;
 			margin: 0 .2rem;
-			width: 30px;
+			width: 31px;
+			filter: grayscale(1) brightness(1.4);
 			&:hover{
-				background-color: $color3;
+				filter: none;
+				// background-color: $color3;
+			}
+		}
+	}
+
+	.contacts{
+		.email{
+			color: $color3;
+			border-bottom: 1px dashed;
+			&:hover{
+				text-decoration: none;
+				border-bottom: none;
 			}
 		}
 	}
@@ -324,6 +345,17 @@ button{
 	&__menu{
 		margin-left: 2.5rem;
 		flex-grow: 1;
+		li{
+			margin: 0 0 .3rem;
+		}
+		a{
+			border-bottom: 1px dashed rgba(0,0,0,0);
+			&:hover{
+				color: $color3;
+				border-bottom-color: $color3;
+				text-decoration: none;
+			}
+		}
 	}
 }
 /* =/footer
@@ -332,12 +364,12 @@ button{
 /* =share
 ---------------------------*/
 .share{
-	// color: $color3;
-	font-size: 18px;
-	margin-top: 35px;
+	color: $color5;
+	font-size: 1.8rem;
+	margin-top: 3.5rem;
 	.container{
 		padding-top: .2rem;
-		padding-bottom: 40px;
+		padding-bottom: 4rem;
 		position: relative;
 		p{
 			margin: 2rem 0;
@@ -375,3 +407,4 @@ button{
 		top: -81px;
 	}
 }
+

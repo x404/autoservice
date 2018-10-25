@@ -3484,19 +3484,24 @@ button {
   margin-top: 0.6rem;
   font-size: 16px; }
   .form-control:focus, .form-control:active {
-    border-color: #666;
+    border-color: #808080;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(222, 72, 111, 0.3); }
 
 .top {
-  background-color: #e6e6e6;
+  background-color: #d8d8d8;
   color: #006192;
-  padding: 1rem 0;
-  font-size: 1.6rem; }
+  font-size: 1.8rem;
+  padding: .5rem 0;
+  text-transform: uppercase; }
 
 /* =header
 ---------------------------*/
 .header {
-  padding: 1.6rem 0; }
+  font-family: "SegoeUIRegular";
+  padding: 1.6rem 0;
+  font-size: 1.5rem; }
+  .header .logo {
+    margin: 0 2.5rem 0 1rem; }
   .header__contacts {
     color: #006192; }
     .header__contacts div {
@@ -3504,8 +3509,9 @@ button {
       .header__contacts div:last-child {
         margin-bottom: 0; }
     .header__contacts .tel {
+      font-family: "SegoeUIBold";
       color: #006192;
-      font-size: 2.2rem;
+      font-size: 2.3rem;
       line-height: 1; }
       .header__contacts .tel span {
         color: #000; }
@@ -3532,6 +3538,7 @@ button {
       color: #006192; }
   .mainnav .nav a {
     border-bottom: 1px dashed rgba(0, 0, 0, 0);
+    color: #808080;
     display: block; }
     .mainnav .nav a:hover {
       border-bottom-color: #006192;
@@ -3547,7 +3554,7 @@ button {
   overflow: hidden;
   clip: rect(0 0 0 0); }
 
-.flex-center, .footer .social a, .service__link {
+.flex-center, .footer .social a, .service__link, .map__container .vcard {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -3555,6 +3562,7 @@ button {
 /* =main
 ---------------------------*/
 .main p {
+  line-height: 1.8;
   margin: .5rem 0; }
 
 .main .title {
@@ -3565,51 +3573,71 @@ button {
 
 .title {
   color: #006192;
-  font-size: 30px;
+  font-size: 3rem;
   text-transform: uppercase; }
 
 /* =main
 ---------------------------*/
 /* =footer
 ---------------------------*/
-.footer .logo {
-  text-align: center;
-  width: 140px; }
-
-.footer__top {
-  background-color: #e6e6e6;
-  padding: 3rem 0 1rem; }
-  .footer__top .container {
-    position: relative; }
-
-.footer__meta {
-  padding: .5rem 0; }
-
-.footer .social {
-  margin-top: 3.2rem; }
-  .footer .social a {
+.footer {
+  color: #000; }
+  .footer .logo {
+    text-align: center;
+    width: 140px; }
+  .footer__top {
     background-color: #e6e6e6;
-    border-radius: 50%;
-    height: 30px;
-    margin: 0 .2rem;
-    width: 30px; }
-    .footer .social a:hover {
-      background-color: #006192; }
-
-.footer__menu {
-  margin-left: 2.5rem;
-  flex-grow: 1; }
+    padding: 3rem 0 1rem; }
+    .footer__top .container {
+      position: relative; }
+  .footer__meta {
+    background: #f2f2f2;
+    padding: .5rem 0; }
+    .footer__meta a {
+      color: #006192;
+      border-bottom: 1px dashed; }
+      .footer__meta a:hover {
+        text-decoration: none;
+        border-bottom: none; }
+  .footer .social {
+    margin-top: 3.2rem; }
+    .footer .social a {
+      border-radius: 50%;
+      height: 31px;
+      margin: 0 .2rem;
+      width: 31px;
+      filter: grayscale(1) brightness(1.4); }
+      .footer .social a:hover {
+        filter: none; }
+  .footer .contacts .email {
+    color: #006192;
+    border-bottom: 1px dashed; }
+    .footer .contacts .email:hover {
+      text-decoration: none;
+      border-bottom: none; }
+  .footer__menu {
+    margin-left: 2.5rem;
+    flex-grow: 1; }
+    .footer__menu li {
+      margin: 0 0 .3rem; }
+    .footer__menu a {
+      border-bottom: 1px dashed rgba(0, 0, 0, 0); }
+      .footer__menu a:hover {
+        color: #006192;
+        border-bottom-color: #006192;
+        text-decoration: none; }
 
 /* =/footer
 ---------------------------*/
 /* =share
 ---------------------------*/
 .share {
-  font-size: 18px;
-  margin-top: 35px; }
+  color: #808080;
+  font-size: 1.8rem;
+  margin-top: 3.5rem; }
   .share .container {
     padding-top: .2rem;
-    padding-bottom: 40px;
+    padding-bottom: 4rem;
     position: relative; }
     .share .container p {
       margin: 2rem 0; }
@@ -3737,7 +3765,7 @@ button {
   .article__link:before {
     width: 0;
     height: 0;
-    border-top: 310px solid rgba(0, 0, 0, 0.3);
+    border-top: 310px solid rgba(64, 64, 64, 0.88);
     border-right: 230px solid transparent;
     z-index: 2;
     transition: border-color .3s; }
@@ -3749,9 +3777,9 @@ button {
     color: #fff;
     text-decoration: none; }
     .article__link:hover .btn {
-      background-color: #000; }
+      background-color: rgba(0, 0, 0, 0.75); }
     .article__link:hover:before {
-      border-top-color: rgba(0, 0, 0, 0.8); }
+      border-top-color: rgba(0, 115, 164, 0.55); }
 
 .article__body {
   min-height: 270px;
@@ -3762,7 +3790,7 @@ button {
   flex-direction: column;
   padding: 2.8rem 1.2rem 2.5rem; }
   .article__body .btn {
-    background-color: #006192;
+    background-color: rgba(0, 97, 146, 0.75);
     border: none;
     bottom: 2.8rem;
     color: #fff;
@@ -3789,6 +3817,42 @@ button {
 #articles-carousel .article__item {
   margin-left: auto;
   margin-right: auto; }
+
+.map__container {
+  position: relative; }
+  .map__container .vcard {
+    background-color: rgba(0, 0, 0, 0.55);
+    border-radius: 1.5rem;
+    color: #fff;
+    flex-direction: column;
+    height: 264px;
+    padding: 2rem 2.5rem;
+    position: absolute;
+    width: 28rem;
+    z-index: 10;
+    text-align: center;
+    line-height: 1.5;
+    top: 50%;
+    margin-top: -132px;
+    margin-left: 160px; }
+  .map__container .btn {
+    background: none;
+    border-radius: 4rem;
+    border: 2px solid #ffffff;
+    color: #fff;
+    font-family: "SegoeUIBoldItalic";
+    font-weight: 1.5rem;
+    height: 4rem;
+    line-height: normal;
+    margin-top: 4rem;
+    transition: .3s;
+    width: 21.4rem; }
+    .map__container .btn:hover {
+      background: #fff;
+      color: #006192; }
+
+#ymap {
+  height: 450px; }
 
 /* =mobile-menu
 ---------------------------*/
@@ -4088,9 +4152,9 @@ button {
     left: -33px; }
 
 #articles-carousel .slick-next {
-  right: -30px; }
+  right: -15px; }
   #articles-carousel .slick-next:hover {
-    right: -33px; }
+    right: -18px; }
 
 #articles-carousel .slick-slide {
   position: relative; }
