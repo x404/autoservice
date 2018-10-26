@@ -8,7 +8,9 @@ $(document).ready(function(){
 		nextArrow: '<button type="button" class="slick-next slick-arrow" aria-label="Вперед"></button>',
 		autoplay: false,
 		autoplaySpeed: 4000,
-		adaptiveHeight: true
+		adaptiveHeight: true,
+		fade: true
+		// cssEase: 'linear'
 	});
 
 
