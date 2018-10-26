@@ -3520,7 +3520,7 @@ button {
   background-color: #d8d8d8;
   color: #006192;
   font-size: 1.8rem;
-  padding: .5rem 0;
+  padding: .7rem 0;
   text-transform: uppercase; }
 
 /* =header
@@ -3592,13 +3592,14 @@ button {
 ---------------------------*/
 .main p {
   line-height: 1.8;
-  margin: .5rem 0; }
+  margin: .3rem 0; }
 
 .main .title {
-  font-family: "SegoeUIBold"; }
+  font-family: "SegoeUIBold";
+  margin-bottom: 1.5rem; }
 
 .text {
-  margin: 3rem 0; }
+  margin: 2.6rem 0 2rem; }
 
 .title {
   color: #006192;
@@ -3611,12 +3612,15 @@ button {
 ---------------------------*/
 .footer {
   color: #000; }
+  .footer .contacts {
+    line-height: 1.7; }
   .footer .logo {
+    margin-top: 1rem;
     text-align: center;
     width: 140px; }
   .footer__top {
     background-color: #e6e6e6;
-    padding: 3rem 0 1rem; }
+    padding: 2.6rem 0 1rem; }
     .footer__top .container {
       position: relative; }
   .footer__meta {
@@ -3629,7 +3633,7 @@ button {
         text-decoration: none;
         border-bottom: none; }
   .footer .social {
-    margin-top: 3.2rem; }
+    margin-top: 3.5rem; }
     .footer .social a {
       border-radius: 50%;
       height: 31px;
@@ -3669,7 +3673,7 @@ button {
     padding-bottom: 4rem;
     position: relative; }
     .share .container p {
-      margin: 2rem 0; }
+      margin: 1rem 0 1.5rem; }
     .share .container:before {
       width: 100%;
       height: 1px;
@@ -3863,7 +3867,7 @@ button {
 
 .services-grid {
   flex-wrap: wrap;
-  margin: 35px 0 55px; }
+  margin: 2.5rem 0 5.5rem; }
 
 /* =visual
 ---------------------------*/
@@ -3959,14 +3963,14 @@ button {
   height: 100%;
   display: flex;
   flex-direction: column;
-  padding: 2.8rem 1.2rem 2.5rem; }
+  padding: 2.3rem 1.2rem 2.5rem; }
   .article__body .btn {
     background-color: rgba(0, 97, 146, 0.75);
     border: none;
     bottom: 2.8rem;
     color: #fff;
     height: 35px;
-    left: 3rem;
+    left: 4.1rem;
     position: absolute;
     transition: .3s;
     width: 115px; }
@@ -3998,6 +4002,11 @@ button {
 .fade.show {
   opacity: 1; }
 
+/* =map
+---------------------------*/
+.map .title {
+  margin-bottom: 1rem; }
+
 .map__container {
   position: relative; }
   .map__container .vcard {
@@ -4013,8 +4022,8 @@ button {
     text-align: center;
     line-height: 1.5;
     top: 50%;
-    margin-top: -132px;
-    margin-left: 160px; }
+    margin-top: -120px;
+    margin-left: 140px; }
     .map__container .vcard .btn {
       background: none;
       border-radius: 4rem;
@@ -4044,6 +4053,8 @@ button {
         text-decoration: none;
         border-bottom-color: #006192; }
 
+/* =.map
+---------------------------*/
 #ymap {
   height: 450px; }
 
