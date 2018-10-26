@@ -7,6 +7,98 @@
 		width: 100%;
 	}
 
+	.topelement{
+		background: url(../images/pentagon.png) no-repeat left top;
+		position: absolute;
+		left: 50%;
+		margin-left: -420px;
+		color: $color2;
+		text-align: center;
+		height: 128px;
+		width: 236px;
+		z-index: 100;
+		top: 0;
+		// padding-top: 1.2rem;
+		font-size: 1.6rem;
+		a{
+			height: 90px;
+			color: $color2;
+			position: relative;
+			&:hover{
+				background: none;
+				text-decoration: none;
+				&:before{
+					opacity: 1;
+				}
+			}
+			&:before{
+				@extend .before;
+				background: url(../images/pentagon.png) no-repeat left bottom;
+				height: 128px;
+				left: 0;
+				opacity: 0;
+				top: 0;
+				transition: .3s opacity;
+				width: 236px;
+				z-index: -1;
+			}
+			clip-path: url(#clipping5)
+		}
+	}
+}
+
+.rur{
+	font-family: 'als_rublregular';
+}
+
+
+#home-carousel{
+	.slide{
+		&__text{
+			color: $color2;
+			display: flex;
+			flex-direction: column;
+			height: 100%;
+			justify-content: flex-end;
+			left: 50%;
+			margin-left: 250px;
+			padding-bottom: 50px;
+			padding-left: 3rem;
+			position: absolute;
+			top: 0;
+			width: 450px;
+			z-index: 100;
+			.btn{
+				align-self: center;
+			}
+			p{
+				margin: 0;
+				line-height: 1.6;
+			}
+		}
+
+		&__title{
+			font-family: "SegoeUIBold";
+			font-size: 3rem;
+			text-transform: uppercase;
+		}
+
+		&__desc{
+			font-family: "SegoeUIRegular";
+			font-size: 2.4rem;
+		}
+
+		&__price{
+			font-family: "SegoeUIBold";
+			font-size: 3rem;
+			text-align: center;
+			.rur{
+				font-weight: bold;
+				font-size: 2.4rem;
+			}
+		}
+
+
 
 	position: relative;
 	&:after,
@@ -29,11 +121,10 @@
 		top: 0;
 		background: rgba(0,115,164,.7);
 	}
-}
 
-
-#home-carousel{
-	.slide{
+	}
+	.btn{
+		margin-top: 4rem;
 	}
 }
 
@@ -184,23 +275,25 @@
 	}
 
 	.btn{
+		margin: 0 auto;
+	}
+}
+
+.btn-white{
 		@extend .flex-center;
-		border-radius: 4rem;
 		border: 2px solid #ffffff;
+		border-radius: 4rem;
 		color: $color2;
 		font-family: "SegoeUIBoldItalic";
 		font-size: 1.5rem;
 		height: 4rem;
-		margin: 0 auto;
 		text-align: center;
-		width: 214px;
-		&:hover{
-			background-color: $color2;
-			color: $color3;
-			text-decoration: none;
-		}
-	}
-
+		width: 214px;	
+	&:hover{
+		background-color: $color2;
+		color: $color3;
+		text-decoration: none;
+	}	
 }
 /* =/visual
 ---------------------------*/

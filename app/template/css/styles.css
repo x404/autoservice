@@ -3345,6 +3345,12 @@ a.text-dark:hover, a.text-dark:focus {
   font-style: normal;
   font-weight: normal; }
 
+@font-face {
+  font-family: 'als_rublregular';
+  src: url("../fonts/rouble.woff2") format("woff2"), url("../fonts/rouble.woff") format("woff"), url("../fonts/rouble.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
 /*---------------------------------------------------
     SCSS Elements 0.1
   ---------------------------------------------------
@@ -3496,7 +3502,7 @@ button {
   .tdu:hover {
     text-decoration: none; }
 
-.before, .share .container:before, .carousel:after, .carousel:before, .visual__title:before, .visual__title:after, .article__link:before {
+.before, .share .container:before, .carousel .topelement a:before, #home-carousel .slide:after, #home-carousel .slide:before, .visual__title:before, .visual__title:after, .article__link:before {
   content: "";
   display: block;
   position: absolute; }
@@ -3577,7 +3583,7 @@ button {
   overflow: hidden;
   clip: rect(0 0 0 0); }
 
-.flex-center, .footer .social a, .service__link, .visual .btn, .map__container .vcard {
+.flex-center, .footer .social a, .service__link, .btn-white, .map__container .vcard {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -3692,27 +3698,99 @@ button {
 
 .carousel {
   overflow: hidden;
-  position: relative;
   position: relative; }
   .carousel img {
     height: auto;
     vertical-align: top;
     width: 100%; }
-  .carousel:after, .carousel:before {
+  .carousel .topelement {
+    background: url(../images/pentagon.png) no-repeat left top;
+    position: absolute;
+    left: 50%;
+    margin-left: -420px;
+    color: #fff;
+    text-align: center;
+    height: 128px;
+    width: 236px;
+    z-index: 100;
+    top: 0;
+    font-size: 1.6rem; }
+    .carousel .topelement a {
+      height: 90px;
+      color: #fff;
+      position: relative;
+      clip-path: url(#clipping5); }
+      .carousel .topelement a:hover {
+        background: none;
+        text-decoration: none; }
+        .carousel .topelement a:hover:before {
+          opacity: 1; }
+      .carousel .topelement a:before {
+        background: url(../images/pentagon.png) no-repeat left bottom;
+        height: 128px;
+        left: 0;
+        opacity: 0;
+        top: 0;
+        transition: .3s opacity;
+        width: 236px;
+        z-index: -1; }
+
+.rur {
+  font-family: 'als_rublregular'; }
+
+#home-carousel .slide {
+  position: relative; }
+  #home-carousel .slide__text {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-end;
+    left: 50%;
+    margin-left: 250px;
+    padding-bottom: 50px;
+    padding-left: 3rem;
+    position: absolute;
+    top: 0;
+    width: 450px;
+    z-index: 100; }
+    #home-carousel .slide__text .btn {
+      align-self: center; }
+    #home-carousel .slide__text p {
+      margin: 0;
+      line-height: 1.6; }
+  #home-carousel .slide__title {
+    font-family: "SegoeUIBold";
+    font-size: 3rem;
+    text-transform: uppercase; }
+  #home-carousel .slide__desc {
+    font-family: "SegoeUIRegular";
+    font-size: 2.4rem; }
+  #home-carousel .slide__price {
+    font-family: "SegoeUIBold";
+    font-size: 3rem;
+    text-align: center; }
+    #home-carousel .slide__price .rur {
+      font-weight: bold;
+      font-size: 2.4rem; }
+  #home-carousel .slide:after, #home-carousel .slide:before {
     height: 100%;
     z-index: 2; }
-  .carousel:before {
+  #home-carousel .slide:before {
     width: 300px;
     right: 32%;
     width: 0;
     height: 0;
     border-bottom: 100vh solid rgba(0, 115, 164, 0.7);
     border-left: 230px solid transparent; }
-  .carousel:after {
+  #home-carousel .slide:after {
     width: 32%;
     right: 0;
     top: 0;
     background: rgba(0, 115, 164, 0.7); }
+
+#home-carousel .btn {
+  margin-top: 4rem; }
 
 .main {
   overflow: hidden; }
@@ -3822,19 +3900,21 @@ button {
     .visual__title:after {
       bottom: 0; }
   .visual .btn {
-    border-radius: 4rem;
-    border: 2px solid #ffffff;
-    color: #fff;
-    font-family: "SegoeUIBoldItalic";
-    font-size: 1.5rem;
-    height: 4rem;
-    margin: 0 auto;
-    text-align: center;
-    width: 214px; }
-    .visual .btn:hover {
-      background-color: #fff;
-      color: #006192;
-      text-decoration: none; }
+    margin: 0 auto; }
+
+.btn-white {
+  border: 2px solid #ffffff;
+  border-radius: 4rem;
+  color: #fff;
+  font-family: "SegoeUIBoldItalic";
+  font-size: 1.5rem;
+  height: 4rem;
+  text-align: center;
+  width: 214px; }
+  .btn-white:hover {
+    background-color: #fff;
+    color: #006192;
+    text-decoration: none; }
 
 /* =/visual
 ---------------------------*/
@@ -4211,7 +4291,6 @@ button {
 
 /* Arrows */
 #home-carousel .slick-arrow {
-  background: rgba(0, 0, 0, 0.55);
   background-image: url(../images/arrow.png);
   background-repeat: no-repeat;
   background-position: 43px 20px;
@@ -4229,10 +4308,12 @@ button {
     background-position: 33px 20px; }
 
 #home-carousel .slick-prev {
+  background-color: rgba(0, 0, 0, 0.55);
   left: 50%;
   margin-left: -680px; }
 
 #home-carousel .slick-next {
+  background-color: transparent;
   right: 0;
   margin-right: 280px;
   transform: rotate(180deg); }

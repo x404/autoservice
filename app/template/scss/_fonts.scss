@@ -38,3 +38,14 @@
 	font-style: normal;
 	font-weight: normal;
 }
+
+
+
+@font-face {
+    font-family: 'als_rublregular';
+    src: url('../fonts/rouble.woff2') format('woff2'),
+         url('../fonts/rouble.woff') format('woff'),
+         url('../fonts/rouble.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
