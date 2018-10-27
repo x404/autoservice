@@ -23,36 +23,60 @@ $(document).ready(function(){
 		    {
 		      breakpoint: 1399,
 		      settings: {
-		        slidesToShow: 14,
-		        slidesToScroll: 3
+		        slidesToShow: 3,
+		        slidesToScroll: 1
 		      }
 		    },
 		    {
 		      breakpoint: 991,
 		      settings: {
-		        slidesToShow: 11,
-		        slidesToScroll: 2
+		        slidesToShow: 2,
+		        slidesToScroll: 1
 		      }
 		    },
 		    {
 		      breakpoint: 768,
 		      settings: {
-		        slidesToShow: 9,
-		        slidesToScroll: 2
+		        slidesToShow: 1,
+		        slidesToScroll: 1,
+				centerMode: true,
+				centerPadding: '90px'
 		      }
 		    },
 		    {
-		      breakpoint: 650,
+		      breakpoint: 520,
 		      settings: {
-		        slidesToShow: 5,
-		        slidesToScroll: 2
+		        slidesToShow: 1,
+		        slidesToScroll: 1,
+				centerMode: true,
+				centerPadding: '60px'
 		      }
 		    },
 		    {
 		      breakpoint: 450,
 		      settings: {
-		        slidesToShow: 3,
-		        slidesToScroll: 2
+		        slidesToShow: 1,
+		        slidesToScroll: 1,
+				centerMode: true,
+				centerPadding: '40px'
+		      }
+		    },
+		    {
+		      breakpoint: 390,
+		      settings: {
+		        slidesToShow: 1,
+		        slidesToScroll: 1,
+				centerMode: true,
+				centerPadding: '20px'
+		      }
+		    },
+		    {
+		      breakpoint: 320,
+		      settings: {
+		        slidesToShow: 1,
+		        slidesToScroll: 1,
+				centerMode: true,
+				centerPadding: '10px'
 		      }
 		    }
 		  ]

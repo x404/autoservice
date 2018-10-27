@@ -292,6 +292,12 @@ button{
 	.contacts{
 		line-height: 1.7;
 	}
+	.copyright{
+		flex-wrap: wrap;
+		div{
+			margin-right: .5rem;
+		}
+	}
 	.logo{
 		margin-top: 1rem;
 		text-align: center;
