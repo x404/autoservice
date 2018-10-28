@@ -287,6 +287,20 @@ button{
 
 /* =footer
 ---------------------------*/
+.social{
+	a{
+		@extend .flex-center;
+		border-radius: 50%;
+		height: 31px;
+		margin: 0 .2rem;
+		width: 31px;
+		filter: grayscale(1) brightness(1.4);
+		&:hover{
+			filter: none;
+		}
+	}
+}
+
 .footer{
 	color: $color1;
 	.contacts{
@@ -323,21 +337,9 @@ button{
 			}
 		}
 	}
+
 	.social{
 		margin-top: 3.5rem;
-		a{
-			// background-color: $color4;
-			@extend .flex-center;
-			border-radius: 50%;
-			height: 31px;
-			margin: 0 .2rem;
-			width: 31px;
-			filter: grayscale(1) brightness(1.4);
-			&:hover{
-				filter: none;
-				// background-color: $color3;
-			}
-		}
 	}
 
 	.contacts{
@@ -366,6 +368,10 @@ button{
 			}
 		}
 	}
+}
+
+.creators{
+	white-space: nowrap;
 }
 /* =/footer
 ---------------------------*/

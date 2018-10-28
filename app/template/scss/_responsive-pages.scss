@@ -338,4 +338,18 @@
 			padding-right: 0;
 		}
 	}
+
+	.article__body{
+		text-align: center;
+		.btn{
+			position: static;
+			margin: auto;
+		}
+	}
+}
+
+@media (max-width: 380px){
+	.visual__title{
+		font-size: 1.9rem;
+	}
 }

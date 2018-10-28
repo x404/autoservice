@@ -3583,7 +3583,7 @@ button {
   overflow: hidden;
   clip: rect(0 0 0 0); }
 
-.flex-center, .footer .social a, .service__link, .btn-white, .map__container .vcard {
+.flex-center, .social a, .service__link, .btn-white, .map__container .vcard {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -3610,6 +3610,15 @@ button {
 ---------------------------*/
 /* =footer
 ---------------------------*/
+.social a {
+  border-radius: 50%;
+  height: 31px;
+  margin: 0 .2rem;
+  width: 31px;
+  filter: grayscale(1) brightness(1.4); }
+  .social a:hover {
+    filter: none; }
+
 .footer {
   color: #000; }
   .footer .contacts {
@@ -3638,14 +3647,6 @@ button {
         border-bottom: none; }
   .footer .social {
     margin-top: 3.5rem; }
-    .footer .social a {
-      border-radius: 50%;
-      height: 31px;
-      margin: 0 .2rem;
-      width: 31px;
-      filter: grayscale(1) brightness(1.4); }
-      .footer .social a:hover {
-        filter: none; }
   .footer .contacts .email {
     color: #006192;
     border-bottom: 1px dashed; }
@@ -3663,6 +3664,9 @@ button {
         color: #006192;
         border-bottom-color: #006192;
         text-decoration: none; }
+
+.creators {
+  white-space: nowrap; }
 
 /* =/footer
 ---------------------------*/
@@ -4119,7 +4123,7 @@ button {
     display: block;
     text-align: left; }
   .navbar-toggle {
-    background-color: #0563bf;
+    background-color: #006192;
     border: none;
     cursor: pointer;
     display: block;
@@ -4137,7 +4141,7 @@ button {
       margin: 8px auto;
       width: 30px; }
   .o-menu .navmenu {
-    background: #0563bf;
+    background: #006192;
     z-index: 500;
     right: 0; }
   .o-menu .close-menu {
@@ -4152,8 +4156,6 @@ button {
       .o-menu .mobinfo a:hover {
         text-decoration: underline; }
   .o-menu .show-sm {
-    font-size: 15px;
-    font-size: 1.5rem;
     padding-left: 3rem; }
     .o-menu .show-sm a {
       color: #fff;
@@ -4163,10 +4165,14 @@ button {
       border-bottom: none !important; }
       .o-menu .show-sm a:hover {
         text-decoration: underline; }
+    .o-menu .show-sm .social a {
+      filter: brightness(5);
+      margin-right: 1rem;
+      margin-top: .5rem; }
   .close-menu {
     -webkit-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
-    background-color: #0563bf;
+    background-color: #006192;
     background: none;
     border: none;
     cursor: pointer;
@@ -4184,10 +4190,10 @@ button {
     .close-menu:hover img {
       transform: rotate(90deg); }
   #navbar {
-    background-color: #0563bf; }
+    font-size: 1.8rem;
+    background-color: #006192; }
     #navbar a {
       border-bottom: none !important;
-      font-size: 18px;
       font-weight: 400; }
       #navbar a:hover {
         text-decoration: none; }
@@ -4196,13 +4202,14 @@ button {
     #navbar ul.nav {
       background: none;
       display: block;
-      font-size: 15px;
+      font-size: 1.8rem;
       margin-top: 0;
       padding-left: 15px;
       padding-right: 15px;
       text-align: left; }
-      #navbar ul.nav > li.active > a {
-        text-decoration: underline; }
+      #navbar ul.nav > li.active a,
+      #navbar ul.nav > li.active span {
+        text-decoration: underline !important; }
       #navbar ul.nav li {
         padding: 0;
         border-bottom: 1px solid #fff; }
@@ -4215,7 +4222,8 @@ button {
           text-decoration: none;
           text-transform: none; }
           #navbar ul.nav li a:hover, #navbar ul.nav li span:hover {
-            color: #fff; }
+            color: #fff;
+            text-decoration: underline; }
           #navbar ul.nav li a:before, #navbar ul.nav li span:before {
             display: none !important; }
         #navbar ul.nav li.active, #navbar ul.nav li:hover {
@@ -4481,7 +4489,7 @@ button {
     display: block;
     text-align: left; }
   .navbar-toggle {
-    background-color: #0563bf;
+    background-color: #006192;
     border: none;
     cursor: pointer;
     display: block;
@@ -4499,7 +4507,7 @@ button {
       margin: 8px auto;
       width: 30px; }
   .o-menu .navmenu {
-    background: #0563bf;
+    background: #006192;
     z-index: 500;
     right: 0; }
   .o-menu .close-menu {
@@ -4514,8 +4522,6 @@ button {
       .o-menu .mobinfo a:hover {
         text-decoration: underline; }
   .o-menu .show-sm {
-    font-size: 15px;
-    font-size: 1.5rem;
     padding-left: 3rem; }
     .o-menu .show-sm a {
       color: #fff;
@@ -4525,10 +4531,14 @@ button {
       border-bottom: none !important; }
       .o-menu .show-sm a:hover {
         text-decoration: underline; }
+    .o-menu .show-sm .social a {
+      filter: brightness(5);
+      margin-right: 1rem;
+      margin-top: .5rem; }
   .close-menu {
     -webkit-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
-    background-color: #0563bf;
+    background-color: #006192;
     background: none;
     border: none;
     cursor: pointer;
@@ -4546,10 +4556,10 @@ button {
     .close-menu:hover img {
       transform: rotate(90deg); }
   #navbar {
-    background-color: #0563bf; }
+    font-size: 1.8rem;
+    background-color: #006192; }
     #navbar a {
       border-bottom: none !important;
-      font-size: 18px;
       font-weight: 400; }
       #navbar a:hover {
         text-decoration: none; }
@@ -4558,13 +4568,14 @@ button {
     #navbar ul.nav {
       background: none;
       display: block;
-      font-size: 15px;
+      font-size: 1.8rem;
       margin-top: 0;
       padding-left: 15px;
       padding-right: 15px;
       text-align: left; }
-      #navbar ul.nav > li.active > a {
-        text-decoration: underline; }
+      #navbar ul.nav > li.active a,
+      #navbar ul.nav > li.active span {
+        text-decoration: underline !important; }
       #navbar ul.nav li {
         padding: 0;
         border-bottom: 1px solid #fff; }
@@ -4577,7 +4588,8 @@ button {
           text-decoration: none;
           text-transform: none; }
           #navbar ul.nav li a:hover, #navbar ul.nav li span:hover {
-            color: #fff; }
+            color: #fff;
+            text-decoration: underline; }
           #navbar ul.nav li a:before, #navbar ul.nav li span:before {
             display: none !important; }
         #navbar ul.nav li.active, #navbar ul.nav li:hover {
@@ -4636,7 +4648,7 @@ button {
   .title {
     font-size: 2.8rem; }
   .main .title {
-    margin-bottom: 0; }
+    margin-bottom: 1rem; }
   .footer__menu ul {
     margin-right: 2rem; } }
 
@@ -4656,6 +4668,10 @@ button {
 @media (max-width: 380px) {
   .header__contacts .tel {
     font-size: 2rem; } }
+
+@media (max-width: 320px) {
+  .top {
+    display: none; } }
 
 @media (max-width: 1600px) {
   #home-carousel .slide__text {
@@ -4842,4 +4858,13 @@ button {
     width: 100%; }
   .articles .container {
     padding-left: 0;
-    padding-right: 0; } }
+    padding-right: 0; }
+  .article__body {
+    text-align: center; }
+    .article__body .btn {
+      position: static;
+      margin: auto; } }
+
+@media (max-width: 380px) {
+  .visual__title {
+    font-size: 1.9rem; } }
