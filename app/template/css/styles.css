@@ -4008,11 +4008,6 @@ button {
 
 /* =/articles
 ---------------------------*/
-#articles-carousel line {
-  stroke: #7f7f7f;
-  stroke-width: 3;
-  transition: .3s; }
-
 #articles-carousel .article__item {
   margin-left: auto;
   margin-right: auto; }
@@ -4360,7 +4355,14 @@ button {
 #home-carousel .slick-slide {
   position: relative; }
 
-#articles-carousel .slick-arrow {
+#articles-carousel line,
+#gallery-carousel line {
+  stroke: #7f7f7f;
+  stroke-width: 3;
+  transition: .3s; }
+
+#articles-carousel .slick-arrow,
+#gallery-carousel .slick-arrow {
   background-color: transparent;
   background-image: url(../images/arrow.png);
   background-repeat: no-repeat;
@@ -4374,22 +4376,29 @@ button {
   width: 17px;
   z-index: 10;
   transition: .3s; }
-  #articles-carousel .slick-arrow:hover {
+  #articles-carousel .slick-arrow:hover,
+  #gallery-carousel .slick-arrow:hover {
     background-position: 33px 24px; }
-    #articles-carousel .slick-arrow:hover line {
+    #articles-carousel .slick-arrow:hover line,
+    #gallery-carousel .slick-arrow:hover line {
       stroke: #006192; }
 
-#articles-carousel .slick-prev {
+#articles-carousel .slick-prev,
+#gallery-carousel .slick-prev {
   left: -30px; }
-  #articles-carousel .slick-prev:hover {
+  #articles-carousel .slick-prev:hover,
+  #gallery-carousel .slick-prev:hover {
     left: -33px; }
 
-#articles-carousel .slick-next {
+#articles-carousel .slick-next,
+#gallery-carousel .slick-next {
   right: -15px; }
-  #articles-carousel .slick-next:hover {
+  #articles-carousel .slick-next:hover,
+  #gallery-carousel .slick-next:hover {
     right: -18px; }
 
-#articles-carousel .slick-slide {
+#articles-carousel .slick-slide,
+#gallery-carousel .slick-slide {
   position: relative; }
 
 /* Dots */
@@ -4452,7 +4461,8 @@ button {
   border-top: 1px solid #d8d8d8; }
 
 main h1,
-main h2 {
+main h2,
+main h3 {
   font-family: "SegoeUIBold";
   color: #006192;
   text-transform: uppercase;
@@ -4463,6 +4473,9 @@ main h1 {
 
 main h2 {
   font-size: 2.4rem; }
+
+main h3 {
+  font-size: 1.8rem; }
 
 main p {
   margin: .2rem 0; }
@@ -4490,10 +4503,20 @@ main a {
     text-decoration: none;
     border-bottom: 1px dashed; }
 
+main .text {
+  margin-top: 2rem; }
+
+main table {
+  margin: 1.5rem 0;
+  width: 100%; }
+  main table td {
+    border: 1px solid #ccc;
+    padding: .5rem 1rem; }
+
 /* =breadcrumbs
 ---------------------------*/
 .breadcrumbs {
-  margin: 3rem 0; }
+  margin: 3rem 0 4rem; }
 
 .B_crumbBox {
   display: flex;
@@ -4721,6 +4744,26 @@ main a {
   .service__link:hover .hover {
     display: block !important; } }
 
+@media (max-width: 1399px) {
+  .inner .header .logo {
+    margin-right: 1.3rem;
+    margin-left: 0; }
+  .inner .header__contacts p {
+    margin-left: .5rem; }
+  .inner .header__center .btn {
+    width: 200px; } }
+
+@media (max-width: 1250px) {
+  .inner .header__left {
+    order: 1; }
+  .inner .header__center {
+    order: 3;
+    flex-grow: 1; }
+    .inner .header__center .btn {
+      margin: 1rem auto 0; }
+  .inner .header__right {
+    order: 2; } }
+
 @media (max-width: 991px) {
   .header__wrapper {
     justify-content: center !important; }
@@ -4732,7 +4775,13 @@ main a {
       justify-content: center; }
   .footer__menu {
     margin-top: 1.5rem;
-    margin-left: 0; } }
+    margin-left: 0; }
+  .inner .header__right {
+    flex-grow: 1;
+    width: 100%; }
+  .inner .header .mainnav .nav {
+    justify-content: center;
+    margin-bottom: 1rem; } }
 
 @media (max-width: 767px) {
   .top {
@@ -4746,7 +4795,9 @@ main a {
     padding: .5rem 0;
     text-align: center; }
   .footer .copyright {
-    margin-bottom: .7rem; } }
+    margin-bottom: .7rem; }
+  .inner .header__center .btn {
+    margin-top: 0; } }
 
 @media (max-width: 600px) {
   .top p {
@@ -4766,7 +4817,11 @@ main a {
   .main .title {
     margin-bottom: 1rem; }
   .footer__menu ul {
-    margin-right: 2rem; } }
+    margin-right: 2rem; }
+  .inner .header .logo {
+    margin-right: 0; }
+  .inner .header .btn {
+    margin-top: 1rem; } }
 
 @media (max-width: 450px) {
   .footer .logo {
@@ -4896,6 +4951,7 @@ main a {
     margin-bottom: 2rem; }
     .map__container .vcard .btn {
       margin-top: 2rem; }
+  #gallery-carousel .slick-arrow,
   #articles-carousel .slick-arrow {
     display: none !important; } }
 

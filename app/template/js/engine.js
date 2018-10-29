@@ -87,8 +87,8 @@ $(document).ready(function(){
 	$('#gallery-carousel').slick({
 		slidesToShow: 4,
 		slidesToScroll: 1,
-		prevArrow: '',
-		nextArrow: '',
+		prevArrow: '<button type="button" class="slick-prev slick-arrow" aria-label="Назад"><svg width="17" height="31"><line x1="17" y1="0" x2="0" y2="17" /><line x1="0" y1="15" x2="17" y2="31" /></svg></button>',
+		nextArrow: '<button type="button" class="slick-next slick-arrow" aria-label="Вперед"><svg width="17" height="31"><line x1="0" y1="0" x2="17" y2="17" /><line x1="17" y1="15" x2="0" y2="31" /></svg></button>',
 		responsive: [
 		    {
 		      breakpoint: 1399,

@@ -192,8 +192,11 @@
 		}
 	}
 
-	#articles-carousel .slick-arrow{
-		display: none !important;
+	#gallery-carousel,
+	#articles-carousel{
+		.slick-arrow{
+			display: none !important;
+		}
 	}
 }
 

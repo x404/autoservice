@@ -4,7 +4,8 @@
 
 main{
 	h1,
-	h2
+	h2,
+	h3
 	{
 		font-family: "SegoeUIBold";
 		color: $color3;
@@ -16,6 +17,9 @@ main{
 	}
 	h2{
 		font-size: 2.4rem;
+	}
+	h3{
+		font-size: 1.8rem;
 	}
 	p{
 		margin: .2rem 0;
@@ -46,6 +50,19 @@ main{
 			border-bottom: 1px dashed ;
 		}
 	}
+
+	.text{
+		margin-top: 2rem;
+	}
+
+	table{
+		margin: 1.5rem 0;
+		width: 100%;
+		td{
+			border: 1px solid #ccc;
+			padding: .5rem 1rem;
+		}
+	}
 }
 
 
@@ -54,7 +71,7 @@ main{
 /* =breadcrumbs
 ---------------------------*/
 .breadcrumbs{
-	margin: 3rem 0;
+	margin: 3rem 0 4rem;
 }
 
 

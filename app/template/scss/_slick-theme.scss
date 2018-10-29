@@ -85,43 +85,53 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 
-#articles-carousel .slick{
-	&-arrow{
-		// background: rgba(0,0,0,.7);
-		background-color: transparent;
-		background-image: url(../images/arrow.png);
-		background-repeat: no-repeat;
-		background-position: 43px 24px;
-		border: none;
-		cursor: pointer;
-		height: 30px;
-		margin-top: -15px;
-		position: absolute;
-		top: 50%;
-		width: 17px;
-		z-index: 10;
+#articles-carousel,
+#gallery-carousel
+{
+	line{
+		stroke: #7f7f7f;
+		stroke-width:3;
 		transition: .3s;
-		&:hover{
-			background-position: 33px 24px;
-			line{
-				stroke: $color3;
+	}
+		
+	.slick{
+		&-arrow{
+			// background: rgba(0,0,0,.7);
+			background-color: transparent;
+			background-image: url(../images/arrow.png);
+			background-repeat: no-repeat;
+			background-position: 43px 24px;
+			border: none;
+			cursor: pointer;
+			height: 30px;
+			margin-top: -15px;
+			position: absolute;
+			top: 50%;
+			width: 17px;
+			z-index: 10;
+			transition: .3s;
+			&:hover{
+				background-position: 33px 24px;
+				line{
+					stroke: $color3;
+				}
 			}
 		}
-	}
-	&-prev{
-		left: -30px;
-		&:hover{
-			left: -33px;
+		&-prev{
+			left: -30px;
+			&:hover{
+				left: -33px;
+			}
 		}
-	}
-	&-next{
-		right: -15px;
-		&:hover{
-			right: -18px;
+		&-next{
+			right: -15px;
+			&:hover{
+				right: -18px;
+			}
 		}
-	}
-	&-slide{
-		position: relative;
+		&-slide{
+			position: relative;
+		}
 	}
 }
 
