@@ -15,4 +15,21 @@ _::-webkit-:host:not(:root:root), .header{
 
 //ie11
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.map__container .vcard{
+		display: block;
+	}
+
+	.innerPolygon{
+		display: none !important;
+	}
+
+	.service__item .hover{
+		display: none;
+	}
+
+	.service__link:hover{
+		.hover{
+			display: block !important;
+		}
+	}
 }
