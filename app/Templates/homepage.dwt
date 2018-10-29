@@ -1,0 +1,291 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<link rel="icon" href="/favicon.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+
+<meta name="robots" content="noindex,nofollow" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Главная</title>
+<!-- TemplateEndEditable -->
+<link rel="stylesheet" href="/template/css/styles.min.css" />
+<script src="/template/js/libs.min.js"></script>
+
+
+<link rel="stylesheet" href="../outdatedbrowser/outdatedbrowser.min.css" />
+<script src="/outdatedbrowser/outdatedbrowser.min.js"></script>
+<script src="/outdatedbrowser/detect.js"></script>
+
+<!--[if IE]>
+	<link href="/template/css/styles-ie.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+<body>
+
+<div class="main-grid">
+	<!-- =top -->
+	<div class="top text-center">
+		<p>плановый ремонт и техническое обслуживание автомобилей</p>
+	</div>
+	<!-- =/top -->
+
+	<!-- =header -->
+	<header class="header">
+		<div class="container">
+			<div class="header__wrapper flex-wrap d-flex justify-content-between align-items-center">
+				<div class="header__left d-flex">
+					<div class="logo">
+						<a href="/" title=""><img src="../template/images/logo.png" alt="8shin" width="51" height="63" /></a>
+					</div>
+					<div class="header__contacts">
+						<div class="d-flex align-items-center">
+							<a href="tel:+74996413300" class="tel" title="">+7 <span class="code">(499)</span> 641-33-00</a>
+							<p>ТСЦ МЫТИЩИ</p>
+						</div>
+						<div class="d-flex align-items-center">
+							<a href="tel:+74996410099" class="tel" title="">+7 <span class="code">(499)</span> 641-00-99</a>
+							<p>ГРУЗОВОЙ ШИНОМОНТАЖ</p>
+						</div>
+					</div>
+				</div>
+				<div class="header__right">
+					<!-- =nav -->
+					<div class="navmenu">
+						<div class="navmenu__inner">
+							<nav id="navbar" class="mainnav">
+								<div class="mainnav__list">
+									<ul class="nav nav-tabs">
+										<li> 
+											<a href="#" title="">О НАС</a>
+										</li>
+										<li>
+											<a href="#" title="">УСЛУГИ</a>
+										</li>
+										<li><a href="#" title="">ПРАЙС</a></li>
+										<li class="active"><span>ИНФОРМАЦИЯ</span></li>
+										<li><a href="#" title="">КОНТАКТЫ</a></li>
+									</ul>
+									<div class="show-sm">
+										<a href="tel:+74996413300" class="tel" title="">+7 (499) 641-33-00</a>
+										<a href="tel:+74996410099" class="tel" title="">+7 (499) 641-00-99</a>
+										<a href="mailto:info@8shin.ru">info@8shin.ru</a>
+
+										<div class="social d-flex">
+											<a href="#" title="" target="_blank"><img src="/template/images/icons/in.png" alt="Instagream" /></a>
+											<a href="#" title="" target="_blank"><img src="/template/images/icons/vk.png" alt="Вконтакте" /></a>
+											<a href="#" title="" target="_blank"><img src="/template/images/icons/fb.png" alt="Facebook" /></a>
+											<a href="#" title="" target="_blank"><img src="/template/images/icons/gp.png" alt="Google +" /></a>
+										</div>
+									</div>
+								</div>
+							</nav>	
+							<button type="button" class="close-menu"><img src="/template/images/close.png" alt="Закрыть меню" /></button>
+						</div>
+					</div>
+					<!-- =/nav -->
+				</div>
+			</div>
+		</div>
+
+		<button type="button" class="navbar-toggle" aria-label="Показать/Скрыть меню">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+	</header>
+	<!-- =/header -->
+
+	<!-- =main -->
+	<div class="main">
+		<!-- TemplateBeginEditable name="EditRegion3" -->
+		<div class="container">
+			<!-- =breadcrumbs -->
+			<div class="breadcrumbs">
+				<ul class="B_crumbBox">
+					<li class="B_crumb">главная</li>
+					<li>-</li>
+					<li class="B_lastCrumb"><span class="B_currentCrumb"></span></li>
+				</ul>
+			</div>
+			<!-- =/breadcrumbs -->
+			<main>
+				<h1></h1>
+			</main>
+		</div>
+		<!-- TemplateEndEditable -->
+		<!-- =share -->
+		<div class="share">
+			<div class="container text-center">
+				<p>поделитесь с друзьями нашим проектом!</p>
+				<div class="ya-share2" data-services="collections,vkontakte,facebook,odnoklassniki,moimir,gplus,twitter,linkedin,lj,viber,whatsapp,skype,telegram"></div>
+			</div>
+		</div>
+		<!-- =/share -->
+	</div>
+	<!-- =/main -->
+
+	<!-- =footer -->
+	<footer class="footer">
+		<div class="footer__top">
+			<div class="container">
+				<button type="button" id="totop">
+					<svg width="32" height="17">
+						<line x1="0" y1="17" x2="17" y2="0" />
+						<line x1="15" y1="0" x2="32" y2="17" />
+					</svg>
+					<span class="visually-hidden">Вверх</span>
+				</button>
+				<div class="d-flex flex-wrap">
+					<div class="footer__contacts">
+						<div class="d-flex">
+							<div class="logo">
+								<a href="/" title="">
+									<img src="../template/images/logo.png" alt="8shin" />
+								</a>
+							</div>
+							<div class="contacts">
+								+7 (499) 641-33-00 <br>
+								ТСЦ Мытищи <br>
+								+7 (499) 641-00-99 <br>
+								Грузовой шиномонтаж <br>
+								<a href="mailto:info@8shin.ru" title="" class="email">info@8shin.ru</a>
+							</div>
+						</div>
+						<div class="social d-flex justify-content-center">
+							<a href="#" title="" target="_blank"><img src="/template/images/icons/in.png" alt="Instagream" /></a>
+							<a href="#" title="" target="_blank"><img src="/template/images/icons/vk.png" alt="Вконтакте" /></a>
+							<a href="#" title="" target="_blank"><img src="/template/images/icons/fb.png" alt="Facebook" /></a>
+							<a href="#" title="" target="_blank"><img src="/template/images/icons/gp.png" alt="Google +" /></a>
+						</div>
+					</div>
+					<div class="footer__menu d-flex justify-content-between">
+						<ul>
+							<li><a href="#" title="">Автосервис</a></li>
+							<li><a href="#" title="">Диагностика</a></li>
+							<li><a href="#" title="">Техническое обслуживание</a></li>
+							<li><a href="#" title="">Заправка кондиционера</a></li>
+							<li><a href="#" title="">Шиномонтаж</a></li>
+							<li><a href="#" title="">Грузовой шиномонтаж</a></li>
+							<li><a href="#" title="">Ремонт глушителей</a></li>
+						</ul>
+						<ul>
+							<li><a href="#" title="">Автосервис</a></li>
+							<li><a href="#" title="">Диагностика</a></li>
+							<li><a href="#" title="">Техническое обслуживание</a></li>
+							<li><a href="#" title="">Заправка кондиционера</a></li>
+							<li><a href="#" title="">Шиномонтаж</a></li>
+							<li><a href="#" title="">Грузовой шиномонтаж</a></li>
+							<li><a href="#" title="">Ремонт глушителей</a></li>
+						</ul>
+						<ul>
+							<li><a href="#" title="">Автосервис</a></li>
+							<li><a href="#" title="">Диагностика</a></li>
+							<li><a href="#" title="">Техническое обслуживание</a></li>
+							<li><a href="#" title="">Заправка кондиционера</a></li>
+							<li><a href="#" title="">Шиномонтаж</a></li>
+							<li><a href="#" title="">Грузовой шиномонтаж</a></li>
+							<li><a href="#" title="">Ремонт глушителей</a></li>
+						</ul>
+						<ul>
+							<li><a href="#" title="">Автосервис</a></li>
+							<li><a href="#" title="">Диагностика</a></li>
+							<li><a href="#" title="">Техническое обслуживание</a></li>
+							<li><a href="#" title="">Заправка кондиционера</a></li>
+							<li><a href="#" title="">Шиномонтаж</a></li>
+							<li><a href="#" title="">Грузовой шиномонтаж</a></li>
+							<li><a href="#" title="">Ремонт глушителей</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer__meta">
+			<div class="container">
+				<div class="d-flex justify-content-between align-items-center">
+					<div class="copyright d-flex">
+						<div>
+						  	Copyright © 2018 <a href="/" title="">Автосервис "Мытищи"</a>
+						</div>
+						<div>Все права защищены. Копирование материала строго запрещено.</div>
+					</div>
+					<div class="creators">
+						<p>Дизайн сайта <a href="https://kreotif.com" title="Дизайн сайтов" target="_blank">DA Kreotif</a></p>
+						<p>Программирование сайта - <a href="https://proverstka.com.ua" title="Создание сайтов" target="_blank">Провёрстка</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- =/footer -->	
+</div>
+
+
+<div id="outdated"></div>
+<script type="text/javascript" src="/template/js/slick.min.js"></script>
+<script src="/template/js/engine.js"></script>
+<script src="//yastatic.net/share2/share.js"></script>
+
+<script src="http://api-maps.yandex.ru/2.1.26/?lang=ru_RU"></script>
+
+<script>
+var map;
+var myCollection;
+ymaps.ready(function () {
+	map = new ymaps.Map('ymap', {
+		center: [55.891542, 37.711087],
+		zoom: 17
+	});
+	myCollection = new ymaps.GeoObjectCollection(null, {
+        // Опции.
+        // Необходимо указать данный тип макета.
+        iconLayout: 'default#image',
+        // Своё изображение иконки метки.
+        iconImageHref: '/template/images/balloon.png',
+        // Размеры метки.
+        iconImageSize: [69, 86],
+        // Смещение левого верхнего угла иконки относительно
+        // её "ножки" (точки привязки).
+        iconImageOffset: [-30, -86]
+	});
+	myCollection.add(new ymaps.Placemark(
+		[55.891542, 37.711087],
+		{
+			hintContent: 'Трудовая 37А',
+			balloonContent: ''
+		}
+	));
+	myCollection.add(new ymaps.Placemark(
+		[55.854522, 37.564876],
+		{
+			hintContent: 'ТСЦ Дмитровка',
+			balloonContent: ''
+		}
+	));
+
+	map.behaviors.disable('scrollZoom'); 
+
+	map.geoObjects.add(myCollection);
+
+
+	map.events.add('click', function onMapClick(e) {
+		if(map.behaviors.isEnabled('scrollZoom')) {
+			map.events.remove('click', onMapClick);
+		} else {
+			map.behaviors.enable(['scrollZoom']);
+		}
+	});
+});
+function go_to(lat,lon){
+	map.setCenter([lat, lon], 16);
+}
+</script>
+
+</body>
+</html>
