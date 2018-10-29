@@ -142,3 +142,15 @@ main{
 		min-width: 43px;
 	}
 }
+
+
+.inner{
+	.articles{
+		margin: 3rem 0;
+		.article{
+			&__item{
+				margin-bottom: 2.5rem;
+			}
+		}
+	}
+}

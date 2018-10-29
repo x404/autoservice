@@ -4562,6 +4562,11 @@ main table {
   min-height: 43px;
   min-width: 43px; }
 
+.inner .articles {
+  margin: 3rem 0; }
+  .inner .articles .article__item {
+    margin-bottom: 2.5rem; }
+
 /* =mobile-menu
 ---------------------------*/
 .show-sm,
