@@ -3456,6 +3456,11 @@ h2 {
 h3 {
   font-size: 1.6rem; }
 
+h1,
+h2,
+h3 {
+  font-weight: normal; }
+
 .regular {
   font-family: "SegoeUIRegular"; }
 
