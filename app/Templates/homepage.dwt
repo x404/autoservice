@@ -55,6 +55,11 @@
 						</div>
 					</div>
 				</div>
+				<!-- TemplateBeginEditable name="EditRegion5" -->
+				<div class="header__center">
+					<a href="#" class="btn flex-center">запись на шиномонтаж</a>
+				</div>
+				<!-- TemplateEndEditable -->
 				<div class="header__right">
 					<!-- =nav -->
 					<div class="navmenu">

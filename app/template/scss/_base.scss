@@ -190,6 +190,21 @@ button{
 			margin-left: 2rem;
 		}
 	}
+
+	&__center{
+		.btn{
+			color: #c10b34;
+			border: 1px solid #c10b34;
+			font-family: "SegoeUIItalic";
+			border-radius: 40px;
+			width: 214px;
+			height: 40px;
+			&:hover{
+				background-image: linear-gradient(to top, #790518 0%, #c10b34 100%);
+				color: $color2;
+			}
+		}
+	}
 	a{
 		&:hover{
 			text-decoration: none;
