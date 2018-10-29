@@ -1,0 +1,51 @@
+.pagination{
+	$color: #064ca1;
+	border-top: 1px solid $color10;
+	margin-top: -2rem;
+	margin-bottom: -1rem;
+	font-family: "SegoeUIBoldItalic";
+	text-align: center;
+	a, span{
+		margin: 0 .2rem;
+	}
+	a,
+	span{
+		@extend .flex-center;
+		@extend .tdn;
+		background-color: #b3b3b3;
+		border-radius: 5px;
+		color: $color2;
+		height: 3rem;
+		font-size: 1.8rem;
+		border-bottom: none;
+		width: 3rem;
+		&:hover{
+			background: $color;
+			border-bottom: none;
+			color: $color2;
+			text-decoration: none;
+		}
+	}
+	.current{
+		text-decoration: underline;
+		span{
+			background: $color;
+			color: $color2;
+			cursor: default;
+		}
+	}
+
+	ul{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;	
+		li{
+			&:before{
+				display: none;
+			}
+		}
+	}
+	.control{
+		margin-bottom: .5rem;
+	}
+}

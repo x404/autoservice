@@ -3497,9 +3497,11 @@ button {
     grid-template-areas: "top" "header" "main" "footer";
     grid-template-rows: auto auto 1fr auto; } }
 
-.tdn {
+.tdn, .pagination a,
+.pagination span {
   text-decoration: none; }
-  .tdn:hover {
+  .tdn:hover, .pagination a:hover,
+  .pagination span:hover {
     text-decoration: underline; }
 
 .tdu {
@@ -3598,7 +3600,8 @@ button {
   overflow: hidden;
   clip: rect(0 0 0 0); }
 
-.flex-center, .social a, .service__link, .btn-white, .map__container .vcard {
+.flex-center, .social a, .service__link, .btn-white, .map__container .vcard, .pagination a,
+.pagination span {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -4567,6 +4570,43 @@ main table {
   .inner .articles .article__item {
     margin-bottom: 2.5rem; }
 
+.pagination {
+  border-top: 1px solid #ccc;
+  margin-top: -2rem;
+  margin-bottom: -1rem;
+  font-family: "SegoeUIBoldItalic";
+  text-align: center; }
+  .pagination a, .pagination span {
+    margin: 0 .2rem; }
+  .pagination a, .pagination span {
+    background-color: #b3b3b3;
+    border-radius: 5px;
+    color: #fff;
+    height: 3rem;
+    font-size: 1.8rem;
+    border-bottom: none;
+    width: 3rem; }
+    .pagination a:hover,
+    .pagination span:hover {
+      background: #064ca1;
+      border-bottom: none;
+      color: #fff;
+      text-decoration: none; }
+  .pagination .current {
+    text-decoration: underline; }
+    .pagination .current span {
+      background: #064ca1;
+      color: #fff;
+      cursor: default; }
+  .pagination ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .pagination ul li:before {
+      display: none; }
+  .pagination .control {
+    margin-bottom: .5rem; }
+
 /* =mobile-menu
 ---------------------------*/
 .show-sm,
@@ -4958,7 +4998,9 @@ main table {
       margin-top: 2rem; }
   #gallery-carousel .slick-arrow,
   #articles-carousel .slick-arrow {
-    display: none !important; } }
+    display: none !important; }
+  .article__item {
+    width: 240px; } }
 
 @media (max-width: 750px) {
   .carousel .topelement {
@@ -5020,6 +5062,19 @@ main table {
     text-align: justify; }
   #totop {
     display: none; } }
+
+@media (max-width: 530px) {
+  .inner .articles {
+    justify-content: center !important; }
+    .inner .articles .article__item {
+      width: 270px; }
+    .inner .articles .article__title {
+      text-align: center; }
+    .inner .articles .article__body .btn {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 2rem;
+      position: static; } }
 
 @media (max-width: 450px) {
   #home-carousel .slide__text {

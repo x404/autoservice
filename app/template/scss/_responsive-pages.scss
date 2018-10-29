@@ -198,6 +198,10 @@
 			display: none !important;
 		}
 	}
+
+	.article__item{
+		width: 240px;
+	}
 }
 
 
@@ -212,7 +216,6 @@
 		margin-right: auto;
 		margin-bottom: 1rem;
 		a{
-			// background: none;
 			clip-path: none;
 			height: auto;
 			line-height: 1.4;
@@ -310,6 +313,29 @@
 }
 
 
+@media (max-width: 530px){
+	.inner{
+		.articles{
+			justify-content: center !important	;
+			.article{
+				&__item{
+					width: 270px;	
+				}
+				&__title{
+					text-align: center;	
+				}
+				&__body{
+					.btn{
+						margin-left: auto;
+						margin-right: auto;	
+						margin-top: 2rem;	
+						position: static;
+					}
+				}
+			}
+		}
+	}
+}
 
 
 @media (max-width: 450px){
