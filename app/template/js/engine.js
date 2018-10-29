@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+	 $('a.fancybox').fancybox() 
 
 	$('#home-carousel').slick({
 		slidesToShow: 1,
@@ -81,6 +82,75 @@ $(document).ready(function(){
 		    }
 		  ]
 	});
+
+
+	$('#gallery-carousel').slick({
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		prevArrow: '',
+		nextArrow: '',
+		responsive: [
+		    {
+		      breakpoint: 1399,
+		      settings: {
+		        slidesToShow: 3,
+		        slidesToScroll: 1
+		      }
+		    },
+		    {
+		      breakpoint: 991,
+		      settings: {
+		        slidesToShow: 2,
+		        slidesToScroll: 1
+		      }
+		    },
+		    {
+		      breakpoint: 768,
+		      settings: {
+		        slidesToShow: 1,
+		        slidesToScroll: 1,
+				centerMode: true,
+				centerPadding: '90px'
+		      }
+		    },
+		    {
+		      breakpoint: 520,
+		      settings: {
+		        slidesToShow: 1,
+		        slidesToScroll: 1,
+				centerMode: true,
+				centerPadding: '60px'
+		      }
+		    },
+		    {
+		      breakpoint: 450,
+		      settings: {
+		        slidesToShow: 1,
+		        slidesToScroll: 1,
+				centerMode: true,
+				centerPadding: '40px'
+		      }
+		    },
+		    {
+		      breakpoint: 390,
+		      settings: {
+		        slidesToShow: 1,
+		        slidesToScroll: 1,
+				centerMode: true,
+				centerPadding: '10px'
+		      }
+		    },
+		    {
+		      breakpoint: 0,
+		      settings: {
+		        slidesToShow: 1,
+		        slidesToScroll: 1,
+				centerMode: true,
+				centerPadding: '30px'
+		      }
+		    }
+		  ]
+	});	
 	
 	// mobile-menu
 	$('#navbar').each(function(){

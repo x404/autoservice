@@ -346,10 +346,38 @@
 			margin: auto;
 		}
 	}
+
+	main{
+		h1,
+		h2{
+			text-align: center;
+		}
+		h1{
+			font-size: 2.6rem;
+		}
+		h2{
+			font-size: 2rem;
+		}
+	}
 }
 
 @media (max-width: 380px){
 	.visual__title{
 		font-size: 1.9rem;
+	}
+
+	.gallery{
+		// position: relative;
+		// left: 15px;
+		a{
+			margin-left: 0;
+			margin-right: 0;
+			width: 230px;
+			img{
+				// max-width: 100%
+			}
+		}
+		// margin-left: -15px;
+		// margin-right: -15px;
 	}
 }
