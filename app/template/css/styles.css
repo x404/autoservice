@@ -4722,9 +4722,14 @@ main table {
     margin-left: auto;
     margin-right: auto;
     display: block; }
-    .feedback__form .submit:hover {
+    .feedback__form .submit:hover:not([disabled]) {
       color: #fff;
       background: #006192; }
+    .feedback__form .submit:disabled {
+      opacity: .5;
+      cursor: default;
+      border-color: gray !important;
+      color: gray !important; }
   .feedback__form .policy {
     margin-top: 20px; }
   .feedback__form #msg {
