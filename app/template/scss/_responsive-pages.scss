@@ -100,13 +100,11 @@
 				display: none;
 			}
 			&:after{
-				// display: none;
 				width: 100%;
 			}
 			&__text{
 				left: 0;
 				margin-left: 0;
-				// margin-top: 20%;
 				text-align: center;
 				padding-left: 30px;
 				width: 100%;
@@ -137,6 +135,13 @@
 	.visual__box{
 		margin-left: auto;
 		margin-right: auto;
+	}
+
+	.feedback
+	{
+		&__form .row input.form-control{
+			width: 220px;
+		}
 	}
 }
 
@@ -202,6 +207,13 @@
 	.article__item{
 		width: 240px;
 	}
+
+	.feedback__form .row{
+		margin-top: .8rem;
+		input.form-control{
+			width: 100%;
+		}
+	}
 }
 
 
@@ -223,6 +235,28 @@
 			&:before,
 			&:after{
 				display: none;
+			}
+		}
+	}
+
+	.feedback{
+		&__form .row{
+			display: block;
+			input.form-control,
+			textarea{
+				display: block;
+				width: 100%;
+			}
+
+			#msg{
+				width: 100%;
+			}
+			textarea{
+				height: 100px;
+			}
+
+			.file-upload{
+				bottom: 0;
 			}
 		}
 	}
@@ -388,6 +422,13 @@
 			font-size: 2rem;
 		}
 	}
+
+	.feedback__form .row{
+		input.form-control,
+		textarea{
+			font-size: 1.5rem;
+		}
+	}
 }
 
 @media (max-width: 380px){
@@ -396,17 +437,17 @@
 	}
 
 	.gallery{
-		// position: relative;
-		// left: 15px;
 		a{
 			margin-left: 0;
 			margin-right: 0;
 			width: 230px;
-			img{
-				// max-width: 100%
-			}
 		}
-		// margin-left: -15px;
-		// margin-right: -15px;
+	}
+}
+
+
+@media (max-width: 350px){
+	.feedback .title{
+		font-size: 20px;
 	}
 }
