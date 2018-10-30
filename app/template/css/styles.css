@@ -4866,7 +4866,9 @@ main table {
   .inner .header .logo {
     margin-right: 0; }
   .inner .header .btn {
-    margin-top: 1rem; } }
+    margin-top: 1rem; }
+  iframe {
+    width: 100% !important; } }
 
 @media (max-width: 450px) {
   .footer .logo {
