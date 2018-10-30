@@ -167,5 +167,14 @@ main{
 		h2{
 			font-size: 2.4rem;
 		}
+		.vcard{
+			height: auto;
+			padding-top: 3rem;
+			padding-bottom: 3rem;
+		}
 	}
+}
+
+label.error{
+	display: none !important;
 }

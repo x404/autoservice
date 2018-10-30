@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-	 $('a.fancybox').fancybox() 
+	$('a.fancybox').fancybox() 
 
 	$('#home-carousel').slick({
 		slidesToShow: 1,
@@ -11,7 +11,6 @@ $(document).ready(function(){
 		autoplaySpeed: 4000,
 		adaptiveHeight: true,
 		fade: true
-		// cssEase: 'linear'
 	});
 
 
@@ -180,6 +179,45 @@ $(document).ready(function(){
 		}, 800);
 		return false;
 	});
+
+
+	var thank = '<div class="thank text-center"><p>Ваше сообщение успешно отправлено</p></div>';
+	var thank2 = '<div class="thank text-center"><p>Ваша заявка успешно отправлена</p><button type="button" class="close" data-dismiss="modal" aria-label="Закрыть" tabindex="5"></button></div>';
+	var errorTxt = 'Возникла ошибка при отправке заявки!';
+	var sending = '<div class="sending">Идет отправка ...</div>'
+
+
+	// форма обратной 
+	$('#feedback-form').validate({
+		submitHandler: function(form){
+			let strSubmit = $(form).serialize();
+			$(form).find('fieldset').hide();
+			$(form).append(sending);
+
+			$.ajax({
+				type: "POST",
+				// url: $(form).attr('action'),
+				url: '/feedback.ajax.php',
+				data: strSubmit,
+				success: function(){
+					$(form).addClass('send');
+					$(form).find('.sending').remove();
+					$(form).append(thank);
+					startClock('feedback-form');
+				},
+				error: function(){
+					alert(errorTxt);
+					$(form).find('fieldset').show();
+					$('.sending').remove();
+				}
+			})
+			.fail(function(error){
+				alert(errorTxt);
+			});
+		}
+	});
+
+
 });
 
 
@@ -190,8 +228,6 @@ $('body').on('click','[data-coord]', function(e) {
 		lat = $this[0],
 		lon = $this[1];
 	map.setCenter([lat, lon], 16);
-	// $('.btn-active').removeClass('btn-active');
-	// $(this).addClass('btn-active');
 });
 
 
@@ -208,3 +244,40 @@ $(function(){
 		}
 	})
 });
+
+
+
+function stopClock(){
+	window.clearInterval(timer);
+	timer = null;
+	sec = 5;
+}
+
+function startClock(form){
+	if (!timer)
+	timer = window.setInterval("showTime('"+form+"')",1000);
+}
+
+
+var timer;
+var sec = 5;
+
+function showTime(form){
+	sec = sec-1;
+	if (sec <=0) {
+		stopClock();
+		if (form == 'feedback-form'){ // форма быстрого сообщения
+			$('.thank').fadeOut('normal',function(){
+				$('.feedback__form .thank').remove();
+				$('.feedback__form .form-control, .feedback__form textarea').val('');
+				$('.feedback__form fieldset').show();
+			});
+		};
+	}
+};
+
+
+function recovery(){
+	$('.thank').remove();
+	$('.modal-vacancy .form-control').val('');
+};

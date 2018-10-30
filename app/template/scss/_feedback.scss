@@ -131,6 +131,7 @@
 		}
 
 		.sending,
+		.thank,
 		.thank{
 			height: 238px;
 			padding-top: 105px;
@@ -204,7 +205,8 @@
 }
 
 
-.sending{
+.sending,
+.thank{
 	text-align: center;
 	font-size: 17px;
 	height: 207px;

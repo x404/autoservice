@@ -4579,6 +4579,14 @@ main table {
 .inner .map h2 {
   font-size: 2.4rem; }
 
+.inner .map .vcard {
+  height: auto;
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+
+label.error {
+  display: none !important; }
+
 .pagination {
   border-top: 1px solid #ccc;
   margin-top: -2rem;
@@ -4735,6 +4743,7 @@ main table {
   .feedback__form #msg {
     padding-right: 80px; }
   .feedback__form .sending,
+  .feedback__form .thank,
   .feedback__form .thank {
     height: 238px;
     padding-top: 105px; }
@@ -4790,7 +4799,8 @@ main table {
   font-size: 36px;
   color: #006192; }
 
-.sending {
+.sending,
+.thank {
   text-align: center;
   font-size: 17px;
   height: 207px;
