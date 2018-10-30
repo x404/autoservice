@@ -60,7 +60,6 @@ gulp.task('compress', function(){
 				config.templateDir + '/js/util.js',
 				config.templateDir + '/js/tab.js',
 				config.templateDir + '/js/popper.min.js',
-				// config.templateDir + '/js/jquery.fancybox.min.js'
 				config.libsDir + '/fancybox/dist/jquery.fancybox.min.js'
 			]),
 			concat('libs.min.js'), // Собираем их в кучу в новом файле libs.min.js
