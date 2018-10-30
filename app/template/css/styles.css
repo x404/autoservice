@@ -4484,7 +4484,10 @@ button {
 
 main h1,
 main h2,
-main h3 {
+main h3,
+main h4,
+main h5,
+main h6 {
   font-family: "SegoeUIBold";
   color: #006192;
   text-transform: uppercase;
@@ -4499,8 +4502,14 @@ main h2 {
 main h3 {
   font-size: 1.8rem; }
 
+main h4, main h5, main h6 {
+  font-size: 1.4rem; }
+
 main p {
   margin: .2rem 0; }
+
+main a {
+  color: #006192; }
 
 main ul {
   margin: 2.5rem 0 1.5rem; }
@@ -4515,6 +4524,27 @@ main ul {
       left: 0;
       top: 3px;
       line-height: 1; }
+
+main ol {
+  margin: 2.5rem 0 1.5rem 15px; }
+  main ol li {
+    margin: .3rem 0; }
+
+main .upper {
+  color: #4c4c4c;
+  font-size: 1.8rem;
+  font-family: "SegoeUIRegular";
+  text-transform: uppercase; }
+
+main .upperbold {
+  color: #4c4c4c;
+  font-size: 1.8rem;
+  font-family: "SegoeUIBold";
+  font-weight: normal;
+  text-transform: uppercase; }
+
+main b, main strong {
+  font-family: "SegoeUIBoldItalic"; }
 
 main a {
   text-decoration: none;
@@ -5330,6 +5360,8 @@ label.error {
     .article__body .btn {
       position: static;
       margin: auto; }
+  main p {
+    text-align: justify; }
   main h1,
   main h2 {
     text-align: center; }

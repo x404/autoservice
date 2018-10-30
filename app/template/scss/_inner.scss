@@ -5,7 +5,10 @@
 main{
 	h1,
 	h2,
-	h3
+	h3,
+	h4,
+	h5,
+	h6
 	{
 		font-family: "SegoeUIBold";
 		color: $color3;
@@ -21,8 +24,15 @@ main{
 	h3{
 		font-size: 1.8rem;
 	}
+
+	h4, h5, h6{
+		font-size: 1.4rem;
+	}
 	p{
 		margin: .2rem 0;
+	}
+	a{
+		color: #006192;
 	}
 	ul{
 		margin: 2.5rem 0 1.5rem;
@@ -40,6 +50,36 @@ main{
 			}
 		}
 	}
+
+	ol{
+		margin: 2.5rem 0 1.5rem 15px;
+		li{
+			margin: .3rem 0;
+		}
+	}
+
+	.upper{
+		color: #4c4c4c;
+		font-size: 1.8rem;
+		font-family: "SegoeUIRegular";
+		text-transform: uppercase;
+	}
+
+	.upperbold{
+		color: #4c4c4c;
+		font-size: 1.8rem;
+		font-family: "SegoeUIBold";
+		font-weight: normal;
+		text-transform: uppercase;
+	}
+
+	b, strong{
+		font-family: "SegoeUIBoldItalic";
+	}
+
+
+
+
 	a{
 		text-decoration: none;
 		display: inline-block;
