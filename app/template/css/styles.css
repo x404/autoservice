@@ -3531,6 +3531,24 @@ button {
   padding: .7rem 0;
   text-transform: uppercase; }
 
+.btn-blue {
+  transition: .3s;
+  background: white;
+  border-radius: 42px;
+  border: 1px solid #006192;
+  color: #006192;
+  font-family: "SegoeUIBoldItalic";
+  height: 42px;
+  font-size: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 21.5rem; }
+  .btn-blue:hover:not([disabled]) {
+    border: 1px solid #006192 !important;
+    color: #fff;
+    background: #006192; }
+
 /* =header
 ---------------------------*/
 .header {
@@ -3601,7 +3619,7 @@ button {
   overflow: hidden;
   clip: rect(0 0 0 0); }
 
-.flex-center, .social a, .service__link, .btn-white, .map__container .vcard, .pagination a,
+.flex-center, .btn-blue, .social a, .service__link, .btn-white, .map__container .vcard, .pagination a,
 .pagination span {
   display: flex;
   justify-content: center;
@@ -4522,6 +4540,9 @@ main table {
       border: none;
       padding-left: 0; }
 
+main img {
+  max-width: 100%; }
+
 /* =breadcrumbs
 ---------------------------*/
 .breadcrumbs {
@@ -4716,23 +4737,7 @@ label.error {
     .feedback__form .row .error {
       border: 1px solid red !important; }
   .feedback__form .submit {
-    transition: .3s;
-    background: white;
-    border-radius: 42px;
-    border: 1px solid #006192;
-    color: #006192;
-    font-family: "SegoeUIBoldItalic";
-    height: 42px;
-    font-size: 1.5rem;
-    margin-top: 2rem;
-    text-align: center;
-    width: 21.5rem;
-    margin-left: auto;
-    margin-right: auto;
-    display: block; }
-    .feedback__form .submit:hover:not([disabled]) {
-      color: #fff;
-      background: #006192; }
+    margin-top: 2rem; }
     .feedback__form .submit:disabled {
       opacity: .5;
       cursor: default;
@@ -4805,6 +4810,16 @@ label.error {
   font-size: 17px;
   height: 207px;
   padding-top: 80px; }
+
+.error__text {
+  background: #73a8c3;
+  color: #fff;
+  font-family: "SegoeUIRegular";
+  font-size: 1.8rem;
+  margin-bottom: 1.8rem;
+  padding: 1.5rem;
+  text-align: center;
+  text-transform: uppercase; }
 
 /* =mobile-menu
 ---------------------------*/

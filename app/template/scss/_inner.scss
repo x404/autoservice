@@ -72,6 +72,9 @@ main{
 		}
 	}
 
+	img{
+		max-width: 100%;
+	}
 }
 
 
@@ -136,10 +139,6 @@ main{
 				opacity: 1;
 			}
 		}
-	}
-	&__item{
-		// flex-basis: 20%;
-		// margin-bottom: 2.5rem;
 	}
 }
 

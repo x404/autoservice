@@ -167,6 +167,28 @@ button{
 	text-transform: uppercase;
 }
 
+
+.btn-blue{
+	transition: .3s;
+	$h : 42px;
+	background: white;
+	border-radius: $h;
+	border: 1px solid $color3;
+	color: $color3;
+	font-family: "SegoeUIBoldItalic";
+	height: $h;
+	font-size: 1.5rem;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: 21.5rem;
+	@extend .flex-center;
+	&:hover:not([disabled]){
+		border: 1px solid $color3 !important;
+		color: $color2;
+		background: $color3;
+	}
+}
 /* =header
 ---------------------------*/
 .header{

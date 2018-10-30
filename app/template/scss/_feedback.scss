@@ -6,28 +6,6 @@
 		color: $color10;
 		font-size: 24px;
 	}
-	// .vcard{
-	// 	.name{
-	// 		display: none;
-	// 	}
-	// 	.adr{
-	// 		margin-top: 20px;
-	// 		margin-bottom: 10px;
-	// 	}
-	// 	.tel{
-	// 		text-decoration: none;
-	// 		margin-right: .5rem;
-	// 	}
-	// 	.email{
-	// 		margin-left: .5rem;
-	// 		@extend .tdn;
-	// 		color: $color11;
-	// 	}
-	// 	p{
-	// 		font-size: 14px;
-	// 		line-height: 3;
-	// 	}
-	// }
 
 	&__content{
 		padding: 35px 0 10px;
@@ -94,25 +72,8 @@
 		}
 
 		.submit{
-			transition: .3s;
-			$h : 42px;
-			background: white;
-			border-radius: $h;
-			border: 1px solid $color3;
-			color: $color3;
-			font-family: "SegoeUIBoldItalic";
-			height: $h;
-			font-size: 1.5rem;
+		
 			margin-top: 2rem;
-			text-align: center;
-			width: 21.5rem;
-			margin-left: auto;
-			margin-right: auto;
-			display: block;
-			&:hover:not([disabled]){
-				color: $color2;
-				background: $color3;
-			}
 			&:disabled
 			{
 				opacity: .5;
