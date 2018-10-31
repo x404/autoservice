@@ -42,7 +42,7 @@
 				width: 236px;
 				z-index: -1;
 			}
-			clip-path: url(#clipping5)
+			clip-path: url(#clipping5);
 		}
 	}
 }
@@ -213,6 +213,7 @@
 		left: 0;
 		position: absolute;
 		top: 0;
+		max-width: 350px;
 	}
 
 	&__title{

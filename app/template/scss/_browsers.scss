@@ -8,6 +8,49 @@ _::-webkit-:host:not(:root:root), .header{
 }
 
 
+_::-webkit-full-page-media, _:future, :root .innerPolygon {
+	display: none !important;
+}
+
+
+_::-webkit-full-page-media, _:future, :root .service__item{
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+		
+_::-webkit-full-page-media, _:future, :root .service__item div.polygon{
+	border: none;
+}
+
+_::-webkit-full-page-media, _:future, :root .service__link{
+	overflow: hidden;
+	height: 315px;
+	width: 270px;
+}
+
+
+_::-webkit-full-page-media, _:future, :root .service__link:after{
+	background: url(../images/edge-polygon.png) no-repeat;
+	width: 270px;
+	height: 315px;
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 10;
+}
+
+_::-webkit-full-page-media, _:future, :root .service__link .hover{
+	display: none;
+}
+
+
+_::-webkit-full-page-media, _:future, :root .service__link:hover .hover{
+	display: block;
+}
+
+
 // edge
 @supports (-ms-ime-align:auto) {
 	.innerPolygon{
