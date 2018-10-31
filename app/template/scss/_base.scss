@@ -107,6 +107,10 @@ button{
 	margin-right: auto;
 }
 
+.show-md{
+	display: none;
+}
+
 
 @supports (display:grid) {
 	.main-grid{

@@ -44,8 +44,17 @@
 
 
 
-@media (max-width: 1250px){
+@media (max-width: 1366px){
+	.articles{
+		.article__item{
+			width: 265px;
 
+		}
+	}
+}
+
+
+@media (max-width: 1250px){
 	#home-carousel{
 		.slick{
 			&-next{
@@ -150,12 +159,12 @@
 	#home-carousel .slick-arrow{
 		display: none !important;
 	}
-	.carousel{
-		.topelement{
-			margin-left: 15px;
-			left: 0;
-		}
-	}
+	// .carousel{
+	// 	.topelement{
+	// 		margin-left: 15px;
+	// 		left: 0;
+	// 	}
+	// }
 	.service{
 		&__item{
 			width: 230px;
@@ -220,24 +229,24 @@
 
 
 @media (max-width: 750px){
-	.carousel .topelement{
-		background: #95233b;
-		position: static;
-		height: auto;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 1rem;
-		a{
-			clip-path: none;
-			height: auto;
-			line-height: 1.4;
-			padding: 1rem 0;
-			&:before,
-			&:after{
-				display: none;
-			}
-		}
-	}
+	// .carousel .topelement{
+	// 	background: #95233b;
+	// 	position: static;
+	// 	height: auto;
+	// 	margin-left: auto;
+	// 	margin-right: auto;
+	// 	margin-bottom: 1rem;
+	// 	a{
+	// 		clip-path: none;
+	// 		height: auto;
+	// 		line-height: 1.4;
+	// 		padding: 1rem 0;
+	// 		&:before,
+	// 		&:after{
+	// 			display: none;
+	// 		}
+	// 	}
+	// }
 
 	.feedback{
 		&__form .row{

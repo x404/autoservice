@@ -10,11 +10,50 @@ _::-webkit-:host:not(:root:root), .header{
 
 // edge
 @supports (-ms-ime-align:auto) {
+	.innerPolygon{
+		display: none !important;
+	}
+	.service{
+		&__item{
+			overflow: hidden;
+			margin-bottom: 15px;
+			div.polygon{
+				border: none;
+			}
+		}
+		&__link{
+			overflow: hidden;
+			height: 315px;
+			width: 270px;
+			&:after{
+				background: url(../images/edge-polygon.png) no-repeat;
+				width: 270px;
+				height: 315px;
+				content: "";
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 0;
+				z-index: 10;
+			}
+			.hover{
+				display: none;
+			}
+			&:hover{
+				.hover{
+					display: block;
+				}
+			}
+		}
+	}
 }
 
 
 //ie11
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.slide{
+		height: 634px;
+	}
 	.map__container .vcard{
 		display: block;
 	}
@@ -23,13 +62,37 @@ _::-webkit-:host:not(:root:root), .header{
 		display: none !important;
 	}
 
-	.service__item .hover{
-		display: none;
-	}
-
-	.service__link:hover{
-		.hover{
-			display: block !important;
+	.service{
+		&__item{
+			overflow: hidden;
+			margin-bottom: 15px;
+			div.polygon{
+				border: none;
+			}
+		}
+		&__link{
+			overflow: hidden;
+			height: 315px;
+			width: 270px;
+			&:after{
+				background: url(../images/edge-polygon.png) no-repeat;
+				width: 270px;
+				height: 315px;
+				content: "";
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 0;
+				z-index: 10;
+			}
+			.hover{
+				display: none;
+			}
+			&:hover{
+				.hover{
+					display: block;
+				}
+			}
 		}
 	}
 }
