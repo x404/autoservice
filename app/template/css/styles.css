@@ -3599,7 +3599,8 @@ button {
   display: flex;
   font-size: 1.5rem; }
   .mainnav .nav li {
-    margin-left: 1rem; }
+    margin-left: .5rem;
+    margin-right: .5rem; }
     .mainnav .nav li.active span,
     .mainnav .nav li.active a {
       border-bottom: 1px dashed #006192;
@@ -5094,8 +5095,6 @@ label.error {
   .header .logo {
     margin-right: 1.3rem;
     margin-left: 0; }
-  .header__contacts p {
-    margin-left: .5rem; }
   .header__center .btn {
     width: 200px; } }
 
