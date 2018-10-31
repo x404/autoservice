@@ -148,6 +148,12 @@ main{
 ---------------------------*/
 
 
+#home-carousel,
+#articles-carousel,
+#gallery-carousel
+{
+	display: flex;
+}
 
 .gallery{
 	margin: 3.5rem 0;

@@ -146,6 +146,10 @@
 		margin-right: auto;
 	}
 
+	.inner .articles{
+		justify-content: space-around !important
+	}
+
 	.feedback
 	{
 		&__form .row input.form-control{
